@@ -1,0 +1,11 @@
+# CodeGraph AST Index Database
+.codegraph/
+
+# System and OS Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs & Temporary Files
+*.log
+commit_msg.txt

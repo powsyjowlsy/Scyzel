@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saint Catherine's College Promotional Portal & Official Weather Monitoring Center. Providing values-centered Catholic education from K-12 to College in Carcar City, Cebu.">
+  <title>Saint Catherine's College • Carcar City, Cebu | Official Portal & Weather Center</title>
+  
+  <!-- Preconnect & Typography Pairing (Plus Jakarta Sans + JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/weather.css">
+</head>
+<body>
+
+  <!-- Sticky Institutional Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-wrapper" aria-label="Saint Catherine's College Home">
+        <div class="brand-crest">SCC</div>
+        <div class="brand-text">
+          <h1>Saint Catherine's College</h1>
+          <span>Carcar City, Cebu • Established 1923</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About & Philosophy</a>
+        <a href="#academics" class="nav-link">Academics</a>
+        <a href="#campus" class="nav-link">Campus Life</a>
+        <a href="#weather" class="nav-link">Weather Center</a>
+        <a href="#admissions" class="nav-link">Admissions</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#weather" class="nav-cta-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.94 10.94a4 4 0 0 0-5.88 0"/><path d="M7.76 13a6 6 0 1 0 11.48-1.5 4 4 0 0 0-8.24-1.5"/></svg>
+          Weather Bulletin
+        </a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Container -->
+    <div class="mobile-drawer" id="mobile-nav-drawer">
+      <div class="mobile-drawer-links">
+        <a href="#home" class="mobile-drawer-link">Home</a>
+        <a href="#about" class="mobile-drawer-link">About & Philosophy</a>
+        <a href="#academics" class="mobile-drawer-link">Academics (K-12 to College)</a>
+        <a href="#campus" class="mobile-drawer-link">Campus Facilities</a>
+        <a href="#weather" class="mobile-drawer-link">Official Weather Center</a>
+        <a href="#admissions" class="mobile-drawer-link">Admissions & Enrollment</a>
+        <a href="#contact" class="mobile-drawer-link">Campus Directory</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Printable Header Voucher (Visible only during window.print()) -->
+  <div class="print-header container">
+    <h2>Saint Catherine's College of Carcar City, Cebu</h2>
+    <p>Official Admissions Prospectus & Emergency Preparedness Reference</p>
+    <p class="font-mono-numbers">Document Generated: Academic Year 2026–2027 | Central Visayas</p>
+  </div>
+
+  <main>
+
+    <!-- SECTION 1: HERO & INSTITUTIONAL PROFILE -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-pill-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Dominican Catholic Heritage • Founded June 15, 1923 • Carcar City, Cebu
+          </div>
+
+          <h2 class="hero-title">
+            Nurturing Christian Faith, Academic Excellence & Community Leadership
+          </h2>
+
+          <p class="hero-subtitle">
+            Welcome to Saint Catherine's College. For more than a century, we have provided values-centered educational formation spanning Basic Education (Kindergarten to Junior High School), Senior High School strands (ABM, HUMSS, STEM, TVL), and distinguished Higher Education teacher and business administration degree programs.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#admissions" class="btn-primary">
+              Enrollment Information
+            </a>
+            <a href="#weather" class="btn-secondary">
+              View Weather Monitoring Center
+            </a>
+            <button type="button" onclick="window.print()" class="btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+              Print Prospectus
+            </button>
+          </div>
+
+          <!-- Hero Metrics Grid -->
+          <div class="hero-stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">103</div>
+              <div class="stat-label">Years of Formation</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">PAASCU</div>
+              <div class="stat-label">Level II Accredited</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">DepEd & CHED Compliant</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">PAGASA</div>
+              <div class="stat-label">Official Telemetry Station</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: INSTITUTIONAL VISION, MISSION & GOALS -->
+    <section id="about" class="section-wrapper">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Institutional Philosophy</span>
+          <h2 class="section-title">Vision, Mission & Dominican Foundation</h2>
+          <p class="section-lead">
+            Founded by Rev. Fr. Anastacio del Corro alongside the Dominican Sisters, Saint Catherine's College operates as a community of truth, prayer, study, and service.
+          </p>
+        </div>
+
+        <div class="grid-12">
+          <!-- Vision Card -->
+          <div class="card" style="grid-column: span 12;">
+            <div class="card-header-badge">
+              <span class="badge badge-primary">Institutional Vision</span>
+            </div>
+            <h3 style="margin-bottom: 12px; font-size: 1.25rem;">Our Guiding Vision</h3>
+            <p style="font-size: 1rem; line-height: 1.7; color: var(--color-text-main);">
+              Saint Catherine's College envisions itself as a premier Dominican Catholic educational community in southern Cebu, dynamically forming intellectually competent, morally upright, and socially committed individuals who embody Gospel values and actively contribute to the sustainable development of church and society.
+            </p>
+          </div>
+
+          <!-- Mission Card -->
+          <div class="card" style="grid-column: span 12;">
+            <div class="card-header-badge">
+              <span class="badge badge-gold">Institutional Mission</span>
+            </div>
+            <h3 style="margin-bottom: 12px; font-size: 1.25rem;">Our Mission Commitments</h3>
+            <p style="font-size: 1rem; line-height: 1.7; color: var(--color-text-main);">
+              Inspired by Saint Catherine of Siena and Saint Dominic de Guzman, we commit ourselves to:
+            </p>
+            <ul style="margin-top: 12px; margin-left: 20px; line-height: 1.7; font-size: 0.9375rem; color: var(--color-text-muted);">
+              <li>Provide transformative, accessible, and learner-centered academic curricula from Basic Education to Higher Education.</li>
+              <li>Instill profound Christian values, ethical discipline, and social responsibility across all programs.</li>
+              <li>Cultivate research culture, environmental stewardship, disaster preparedness, and critical inquiry.</li>
+              <li>Engage the community through sustained pastoral outreach, civic involvement, and professional leadership.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Dominican Core Pillars -->
+        <div style="margin-top: var(--space-10);">
+          <h3 style="margin-bottom: var(--space-6); text-align: center;">The Three Dominican Core Pillars</h3>
+          <div class="pillars-grid">
+            <div class="card pillar-card">
+              <div class="card-header-badge">
+                <span class="badge badge-navy">Pillar I</span>
+                <span class="font-mono-numbers text-xs text-slate-500">Veritas</span>
+              </div>
+              <h4 style="font-size: 1.125rem; margin-bottom: 8px;">Pursuit of Truth (Veritas)</h4>
+              <p>
+                Upholding uncompromised academic honesty, scientific rigor, and spiritual contemplation to discern reality in service to human dignity.
+              </p>
+            </div>
+
+            <div class="card pillar-card">
+              <div class="card-header-badge">
+                <span class="badge badge-gold">Pillar II</span>
+                <span class="font-mono-numbers text-xs text-slate-500">Caritas</span>
+              </div>
+              <h4 style="font-size: 1.125rem; margin-bottom: 8px;">Universal Charity (Caritas)</h4>
+              <p>
+                Manifesting compassionate solidarity with the marginalized, fostering empathy, community stewardship, and active civic service in Carcar City.
+              </p>
+            </div>
+
+            <div class="card pillar-card">
+              <div class="card-header-badge">
+                <span class="badge badge-primary">Pillar III</span>
+                <span class="font-mono-numbers text-xs text-slate-500">Scientia</span>
+              </div>
+              <h4 style="font-size: 1.125rem; margin-bottom: 8px;">Academic Mastery (Scientia)</h4>
+              <p>
+                Striving for professional competence, modern digital literacy, and holistic technical mastery across all grade levels and disciplines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: K-12 STRANDS & COLLEGE DEGREE PROGRAMS -->
+    <section id="academics" class="section-wrapper-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Academic Programs</span>
+          <h2 class="section-title">Educational Offerings from K-12 to College</h2>
+          <p class="section-lead">
+            Saint Catherine's College provides a continuous educational pathway accredited by DepEd, CHED, and PAASCU, designed to prepare students for college matriculation and professional leadership.
+          </p>
+        </div>
+
+        <!-- Academic Department Filter Bar -->
+        <div class="academic-filter-bar" role="tablist" aria-label="Academic Level Filter">
+          <button class="filter-btn active" data-filter="all">All Programs</button>
+          <button class="filter-btn" data-filter="basic">Basic Education (K-10)</button>
+          <button class="filter-btn" data-filter="shs">Senior High School (ABM/HUMSS/STEM)</button>
+          <button class="filter-btn" data-filter="college">College Degrees (Higher Ed)</button>
+        </div>
+
+        <!-- Programs Grid -->
+        <div class="grid-12" id="academic-cards-container">
+
+          <!-- 1. Senior High School: ABM Strand -->
+          <article class="card academic-card" data-category="shs" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
+            <div class="card-header-badge">
+              <span class="badge badge-gold">SHS Academic Track</span>
+              <span class="font-mono-numbers text-xs text-slate-500">Grades 11–12</span>
+            </div>
+            <h3 style="font-size: 1.125rem; margin-bottom: 8px;">Accountancy, Business and Management (ABM)</h3>
+            <p style="margin-bottom: 12px;">
+              Designed specifically for students aspiring to lead enterprises, establish business ventures, or practice accounting, economics, and corporate financial administration.
+            </p>
+            <div style="background-color: var(--color-bg-muted); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px;">
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 6px;">Specialized Curriculum Focus:</span>
+              <ul style="font-size: 0.75rem; color: var(--color-text-muted); margin-left: 16px;">
+                <li>Fundamentals of Accountancy, Business & Management 1 & 2</li>
+                <li>Business Finance, Applied Economics & Principles of Marketing</li>
+                <li>Business Enterprise Simulation & Commercial Ethics</li>
+              </ul>
+            </div>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 0.75rem; border-top: 1px solid var(--color-border); padding-top: 10px;">
+              <span class="text-slate-500">Department: Senior High School</span>
+              <span class="font-semibold text-slate-800">DepEd Recognized</span>
+            </div>
+          </article>
+
+          <!-- 2. Senior High School: HUMSS Strand -->
+          <article class="card academic-card" data-category="shs" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
+            <div class="card-header-badge">
+              <span class="badge badge-gold">SHS Academic Track</span>
+              <span class="font-mono-numbers text-xs text-slate-500">Grades 11–12</span>
+            </div>
+            <h3 style="font-size: 1.125rem; margin-bottom: 8px;">Humanities and Social Sciences (HUMSS)</h3>
+            <p style="margin-bottom: 12px;">
+              Geared toward students intending to pursue careers in legal practice, teacher education, public administration, psychology, communications, and social policy development.
+            </p>
+            <div style="background-color: var(--color-bg-muted); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px;">
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 6px;">Specialized Curriculum Focus:</span>
+              <ul style="font-size: 0.75rem; color: var(--color-text-muted); margin-left: 16px;">
+                <li>Philippine Politics, Governance & Constitutional Law</li>
+                <li>Disciplines and Ideas in Social Sciences & Applied Social Work</li>
+                <li>Community Engagement, Solidarity & Citizenship Practicum</li>
+              </ul>
+            </div>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 0.75rem; border-top: 1px solid var(--color-border); padding-top: 10px;">
+              <span class="text-slate-500">Department: Senior High School</span>
+              <span class="font-semibold text-slate-800">DepEd Recognized</span>
+            </div>
+          </article>
+
+          <!-- 3. Senior High School: STEM & TVL -->
+          <article class="card academic-card" data-category="shs" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
+            <div class="card-header-badge">
+              <span class="badge badge-primary">SHS Academic & Tech-Voc</span>
+              <span class="font-mono-numbers text-xs text-slate-500">Grades 11–12</span>
+            </div>
+            <h3 style="font-size: 1.125rem; margin-bottom: 8px;">STEM, GAS & Technical-Vocational (TVL)</h3>
+            <p style="margin-bottom: 12px;">
+              Comprehensive alternative tracks catering to future scientists, engineers, medical practitioners, and TESDA-certified technical specialists in ICT and Home Economics.
+            </p>
+            <div style="background-color: var(--color-bg-muted); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px;">
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 6px;">Available Strands:</span>
+              <ul style="font-size: 0.75rem; color: var(--color-text-muted); margin-left: 16px;">
+                <li>Science, Technology, Engineering, and Mathematics (STEM)</li>
+                <li>General Academic Strand (GAS)</li>
+                <li>TVL Information & Communications Technology (ICT)</li>
+              </ul>
+            </div>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 0.75rem; border-top: 1px solid var(--color-border); padding-top: 10px;">
+              <span class="text-slate-500">Department: Senior High School</span>
+              <span class="font-semibold text-slate-800">TESDA / DepEd Aligned</span>
+            </div>
+          </article>
+
+          <!-- 4. Higher Education: College of Teacher Education -->
+          <article class="card academic-card" data-category="college" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
+            <div class="card-header-badge">
+              <span class="badge badge-navy">College Department</span>
+              <span class="font-mono-numbers text-xs text-slate-500">4-Year Degree</span>
+            </div>
+            <h3 style="font-size: 1.125rem; margin-bottom: 8px;">College of Teacher Education (BEEd / BSEd)</h3>
+            <p style="margin-bottom: 12px;">
+              Accredited undergraduate programs producing certified, values-driven pedagogical leaders equipped for elementary and secondary classroom excellence.
+            </p>
+            <div style="background-color: var(--color-bg-muted); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px;">
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 6px;">Degree Concentrations:</span>
+              <ul style="font-size: 0.75rem; color: var(--color-text-muted); margin-left: 16px;">
+                <li>Bachelor of Elementary Education (BEEd)</li>
+                <li>Bachelor of Secondary Education (BSEd) - Major in English</li>
+                <li>Bachelor of Secondary Education (BSEd) - Major in Science & Math</li>
+              </ul>
+            </div>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 0.75rem; border-top: 1px solid var(--color-border); padding-top: 10px;">
+              <span class="text-slate-500">Credential: CHED Recognized</span>
+              <span class="font-semibold text-emerald-700">Licensure Ready</span>
+            </div>
+          </article>
+
+          <!-- 5. Higher Education: College of Business Administration -->
+          <article class="card academic-card" data-category="college" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
+            <div class="card-header-badge">
+              <span class="badge badge-navy">College Department</span>
+              <span class="font-mono-numbers text-xs text-slate-500">4-Year Degree</span>
+            </div>
+            <h3 style="font-size: 1.125rem; margin-bottom: 8px;">College of Business Administration (BSBA)</h3>
+            <p style="margin-bottom: 12px;">
+              Provides rigorous training in corporate management, organizational leadership, marketing strategy, and entrepreneurial innovation for the regional and global economy.
+            </p>
+            <div style="background-color: var(--color-bg-muted); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px;">
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 6px;">Major Specializations:</span>
+              <ul style="font-size: 0.75rem; color: var(--color-text-muted); margin-left: 16px;">
+                <li>BSBA Major in Human Resource Management</li>
+                <li>BSBA Major in Marketing & Operations Management</li>
+                <li>Enterprise Incubation & Strategic Management Practicum</li>
+              </ul>
+            </div>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 0.75rem; border-top: 1px solid var(--color-border); padding-top: 10px;">
+              <span class="text-slate-500">Credential: CHED Recognized</span>
+              <span class="font-semibold text-slate-800">Industry Integrated</span>
+            </div>
+          </article>
+
+          <!-- 6. Basic Education Department (K to 10) -->
+          <article class="card academic-card" data-category="basic" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
+            <div class="card-header-badge">
+              <span class="badge badge-primary">Basic Education</span>
+              <span class="font-mono-numbers text-xs text-slate-500">K to Grade 10</span>
+            </div>
+            <h3 style="font-size: 1.125rem; margin-bottom: 8px;">Preschool, Elementary & Junior High School</h3>
+            <p style="margin-bottom: 12px;">
+              A certified, values-integrated basic education curriculum recognized with PAASCU Level II accreditation, emphasizing literacy, STEM foundation, and Christian ethics.
+            </p>
+            <div style="background-color: var(--color-bg-muted); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 16px;">
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 6px;">Academic Levels:</span>
+              <ul style="font-size: 0.75rem; color: var(--color-text-muted); margin-left: 16px;">
+                <li>Kindergarten (Early Childhood Character Formation)</li>
+                <li>Elementary School (Grades 1 to 6 - PAASCU Accredited)</li>
+                <li>Junior High School (Grades 7 to 10 - ESC Government Subsidized)</li>
+              </ul>
+            </div>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; font-size: 0.75rem; border-top: 1px solid var(--color-border); padding-top: 10px;">
+              <span class="text-slate-500">Accreditation: PAASCU Level II</span>
+              <span class="font-semibold text-emerald-700">ESC Grants Available</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SCHOOL FACILITIES, SERVICES & ACTIVITIES -->
+    <section id="campus" class="section-wrapper">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Campus Infrastructure & Student Life</span>
+          <h2 class="section-title">Facilities, Student Services & Organizations</h2>
+          <p class="section-lead">
+            Modern educational facilities, spiritual sanctuaries, athletic complexes, and active co-curricular organizations supporting holistic student development in Carcar City.
+          </p>
+        </div>
+
+        <div class="facility-grid">
+          <!-- Facility 1: Computer Laboratories -->
+          <div class="card">
+            <div class="facility-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h4 style="font-size: 1.0625rem; margin-bottom: 8px;">Multimedia Computer Laboratories</h4>
+            <p>
+              High-speed networked computer terminals equipped with modern productivity suites, programming environments, and digital research databases for SHS and College programs.
+            </p>
+          </div>
+
+          <!-- Facility 2: Science Research Labs -->
+          <div class="card">
+            <div class="facility-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31"></path><path d="M14 9.3V2"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path><path d="M5.52 16h12.96"></path></svg>
+            </div>
+            <h4 style="font-size: 1.0625rem; margin-bottom: 8px;">Integrated Science Research Laboratories</h4>
+            <p>
+              Fully equipped biology, chemistry, and physics laboratory workstations adhering to national institutional laboratory safety protocols.
+            </p>
+          </div>
+
+          <!-- Facility 3: Institutional Chapel -->
+          <div class="card">
+            <div class="facility-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"></path><path d="M17 7H7"></path></svg>
+            </div>
+            <h4 style="font-size: 1.0625rem; margin-bottom: 8px;">Saint Catherine Chapel & Campus Ministry</h4>
+            <p>
+              The spiritual center of the institution providing Eucharistic celebrations, recollection activities, retreats, and personal prayer for students and faculty.
+            </p>
+          </div>
+
+          <!-- Facility 4: Instructional Library -->
+          <div class="card">
+            <div class="facility-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h4 style="font-size: 1.0625rem; margin-bottom: 8px;">Instructional Library & Research Learning Hub</h4>
+            <p>
+              Vast catalog of academic volumes, reference encyclopedias, peer-reviewed periodicals, quiet study zones, and online public access catalog (OPAC) terminals.
+            </p>
+          </div>
+
+          <!-- Facility 5: Multi-Purpose Gymnasium -->
+          <div class="card">
+            <div class="facility-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M4.93 4.93l4.24 4.24"></path><path d="M14.83 9.17l4.24-4.24"></path><path d="M14.83 14.83l4.24 4.24"></path><path d="M9.17 14.83l-4.24 4.24"></path></svg>
+            </div>
+            <h4 style="font-size: 1.0625rem; margin-bottom: 8px;">Multi-Purpose Gymnasium & Athletics Court</h4>
+            <p>
+              Regulation indoor basketball and volleyball courts accommodating intramural competitions, institutional assemblies, cultural convocations, and fitness drills.
+            </p>
+          </div>
+
+          <!-- Facility 6: Student Organizations -->
+          <div class="card">
+            <div class="facility-card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h4 style="font-size: 1.0625rem; margin-bottom: 8px;">Student Organizations & Co-Curricular Guilds</h4>
+            <p>
+              Vibrant student governance including the Supreme Student Council (SSC), Dominican Youth Movement (DYM), Red Cross Youth, Campus Choral Guild, and Drum & Bugle Corps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: OFFICIAL WEATHER MONITORING & DISASTER PREPAREDNESS HUB -->
+    <section id="weather" class="weather-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">DOST-PAGASA Telemetry & Disaster Risk Reduction</span>
+          <h2 class="section-title">Official Weather Monitoring & Advisory Center</h2>
+          <p class="section-lead">
+            Real-time meteorological monitoring for Carcar City, Cebu, verified DOST-PAGASA warning matrices, interactive Doppler radar imagery, and algorithmic heat index safety protocols.
+          </p>
+        </div>
+
+        <div class="weather-grid-layout">
+
+          <!-- 1. Live Meteorological Telemetry Card -->
+          <div class="weather-telemetry-card">
+            <div>
+              <div class="telemetry-card-header">
+                <div>
+                  <span class="station-badge">Live Meteorological Station</span>
+                  <h3 style="font-size: 1.125rem; margin-top: 4px;">Carcar City, Cebu (Campus Monitoring)</h3>
+                </div>
+                <span id="station-status-badge" class="font-mono-numbers text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">
+                  Online Telemetry
+                </span>
+              </div>
+
+              <!-- Main Temperature & Apparent Display -->
+              <div class="telemetry-hero-display">
+                <div>
+                  <div class="temperature-main" id="live-temp-display">--.-°C</div>
+                  <div class="weather-condition-label" id="live-condition-display">Fetching meteorological stream...</div>
+                </div>
+                <div class="heat-index-stat">
+                  <div class="heat-index-value" id="live-heat-index-display">--.-°C</div>
+                  <div class="heat-index-label">Apparent Heat Index</div>
+                </div>
+              </div>
+
+              <!-- Sensor Metrics Grid -->
+              <div class="telemetry-metrics-grid">
+                <div class="metric-cell">
+                  <span class="metric-cell-label">Relative Humidity</span>
+                  <span class="metric-cell-value" id="metric-rh">--%</span>
+                </div>
+                <div class="metric-cell">
+                  <span class="metric-cell-label">Wind Velocity</span>
+                  <span class="metric-cell-value" id="metric-wind">--.- km/h</span>
+                </div>
+                <div class="metric-cell">
+                  <span class="metric-cell-label">Barometric Pressure</span>
+                  <span class="metric-cell-value" id="metric-pressure">----.- hPa</span>
+                </div>
+                <div class="metric-cell">
+                  <span class="metric-cell-label">Max Solar UV</span>
+                  <span class="metric-cell-value" id="metric-uv">--.-</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dynamic DOST-PAGASA Heat Classification Box -->
+            <div id="pagasa-alert-container" class="pagasa-alert-banner status-normal">
+              <div class="alert-tier-title">
+                <span>DOST-PAGASA Heat Classification: Not Hazardous</span>
+                <span class="font-mono-numbers">Below 27.0°C</span>
+              </div>
+              <p class="alert-tier-body font-sans">
+                Normal environmental parameters. Standard on-campus schedule and athletic activities proceed without restriction.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Interactive Heat Index Safety Tool -->
+          <div class="heat-calculator-card">
+            <div style="border-bottom: 1px solid var(--color-border); padding-bottom: 12px; margin-bottom: 16px;">
+              <span class="section-eyebrow" style="margin-bottom: 2px;">Campus Health & Safety</span>
+              <h3 style="font-size: 1.125rem;">Interactive Heat Index & Activity Guide</h3>
+              <p style="font-size: 0.75rem;">Simulate ambient conditions to evaluate heat exposure risks and view active campus safety protocols based on official DOST-PAGASA warning tiers.</p>
+            </div>
+
+            <!-- Temperature Slider -->
+            <div class="slider-group">
+              <div class="slider-header">
+                <label for="calc-temp-slider" class="slider-label">Ambient Air Temperature (°C)</label>
+                <span id="calc-temp-val" class="slider-value-display">32.0°C</span>
+              </div>
+              <input type="range" id="calc-temp-slider" min="20.0" max="45.0" step="0.5" value="32.0" class="range-slider" aria-label="Ambient Air Temperature in Celsius">
+            </div>
+
+            <!-- Humidity Slider -->
+            <div class="slider-group">
+              <div class="slider-header">
+                <label for="calc-rh-slider" class="slider-label">Relative Atmospheric Humidity (%)</label>
+                <span id="calc-rh-val" class="slider-value-display">70%</span>
+              </div>
+              <input type="range" id="calc-rh-slider" min="20" max="100" step="1" value="70" class="range-slider" aria-label="Relative Humidity in Percentage">
+            </div>
+
+            <!-- Calculated Output Box -->
+            <div id="calc-hi-output-box" class="calc-hi-output-container transition-all status-caution">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-semibold uppercase">Computed Heat Index:</span>
+                <span id="calc-hi-output-number" class="text-xl font-bold font-mono-numbers">41.2°C</span>
+              </div>
+              <div class="text-xs font-bold uppercase tracking-wider">
+                PAGASA Level: Extreme Caution (33.0°C to 41.0°C)
+              </div>
+              <p class="text-xs leading-relaxed font-sans">
+                Heat cramps and heat exhaustion possible. Continued activity could lead to heat stroke. Restrict prolonged outdoor activities; ensure classroom cross-ventilation.
+              </p>
+            </div>
+
+            <!-- PAGASA Reference Scale Legend -->
+            <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--color-border); font-size: 0.6875rem;" class="font-mono-numbers">
+              <span style="font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 4px; font-family: var(--font-sans);">Official DOST-PAGASA Heat Scale:</span>
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px;">
+                <span>• &lt;27°C: Not Hazardous</span>
+                <span>• 27-32°C: Caution</span>
+                <span>• 33-41°C: Extreme Caution</span>
+                <span>• 42-51°C: Danger</span>
+                <span>• &gt;=52°C: Extreme Danger</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Regional Doppler Radar & Satellite Container -->
+          <div class="radar-card" style="grid-column: 1 / -1;">
+            <div>
+              <div class="radar-header-tabs">
+                <div>
+                  <span class="section-eyebrow" style="margin-bottom: 2px;">Central Visayas Radar Station</span>
+                  <h3 style="font-size: 1.125rem;">Live Interactive Doppler Radar & Satellite Imagery</h3>
+                </div>
+                <div class="radar-toggle-group" role="tablist">
+                  <button id="tab-radar-btn" class="radar-tab-btn active" onclick="switchRadarLayer('radar')">Weather Radar</button>
+                  <button id="tab-satellite-btn" class="radar-tab-btn" onclick="switchRadarLayer('satellite')">Satellite Cloud Cover</button>
+                </div>
+              </div>
+
+              <!-- Iframe Container centered on Philippines / Carcar City Coordinates -->
+              <div class="radar-embed-frame">
+                <iframe 
+                  id="doppler-radar-iframe"
+                  title="Interactive Doppler Radar Central Visayas"
+                  src="https://embed.windy.com/embed2.html?lat=10.11&lon=123.64&detailLat=10.11&detailLon=123.64&width=650&height=450&zoom=7&level=surface&overlay=radar&product=radar&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" 
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Verified DOST-PAGASA Advisory Links -->
+            <div class="pagasa-gateway-grid">
+              <!-- Card 1: Tropical Cyclone Bulletin -->
+              <a href="https://bagong.pagasa.dost.gov.ph/" target="_blank" rel="noopener" class="pagasa-bulletin-card">
+                <div>
+                  <span class="bulletin-card-tag">Public Weather</span>
+                  <h4 class="bulletin-card-title">Tropical Cyclone Bulletins</h4>
+                  <p class="bulletin-card-desc">Severe weather tracks, storm signal warnings (TCWS 1 to 5), and landfall trajectories.</p>
+                </div>
+                <div class="bulletin-card-footer">
+                  <span>Bagong PAGASA Portal</span>
+                  <span>View Feed &rarr;</span>
+                </div>
+              </a>
+
+              <!-- Card 2: Heavy Rainfall Warnings -->
+              <a href="https://panahon.gov.ph/" target="_blank" rel="noopener" class="pagasa-bulletin-card">
+                <div>
+                  <span class="bulletin-card-tag">Hydrometeorology</span>
+                  <h4 class="bulletin-card-title">Heavy Rainfall Warnings</h4>
+                  <p class="bulletin-card-desc">Color-coded Yellow, Orange, and Red rainfall alerts and thunderstorm advisories.</p>
+                </div>
+                <div class="bulletin-card-footer">
+                  <span>PANaHON Radar Hub</span>
+                  <span>View Feed &rarr;</span>
+                </div>
+              </a>
+
+              <!-- Card 3: Flood Advisories -->
+              <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener" class="pagasa-bulletin-card">
+                <div>
+                  <span class="bulletin-card-tag">Hydrology Bureau</span>
+                  <h4 class="bulletin-card-title">General Flood Advisories</h4>
+                  <p class="bulletin-card-desc">River basin status, flash flood alerts, and water level monitoring for Central Visayas.</p>
+                </div>
+                <div class="bulletin-card-footer">
+                  <span>PAGASA Hydrology</span>
+                  <span>View Feed &rarr;</span>
+                </div>
+              </a>
+
+              <!-- Card 4: Daily Heat Bulletins -->
+              <a href="https://bagong.pagasa.dost.gov.ph/" target="_blank" rel="noopener" class="pagasa-bulletin-card">
+                <div>
+                  <span class="bulletin-card-tag">Climatology</span>
+                  <h4 class="bulletin-card-title">National Heat Index Bulletins</h4>
+                  <p class="bulletin-card-desc">Daily 2:00 PM and 5:00 PM regional heat bulletins and school suspension benchmarks.</p>
+                </div>
+                <div class="bulletin-card-footer">
+                  <span>Official Heat Bulletins</span>
+                  <span>View Feed &rarr;</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: ADMISSIONS & ENROLLMENT (PROACTIVE ERGONOMIC WORKFLOW) -->
+    <section id="admissions" class="section-wrapper">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Admissions & Registrar</span>
+          <h2 class="section-title">Enrollment Information & Online Inquiry</h2>
+          <p class="section-lead">
+            Saint Catherine's College welcomes prospective students across all academic levels. Review our admissions guidelines or submit an inquiry using our ergonomic admissions form.
+          </p>
+        </div>
+
+        <div class="grid-12">
+          <!-- Admissions Step-by-Step Guide -->
+          <div style="grid-column: span 12; @media (min-width: 1024px) { grid-column: span 5; }">
+            <div class="card" style="height: 100%;">
+              <h3 style="font-size: 1.125rem; margin-bottom: 16px;">Step-by-Step Admissions Process</h3>
+              
+              <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div style="display: flex; gap: 12px;">
+                  <div style="width: 32px; height: 32px; border-radius: var(--radius-full); background-color: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8125rem; flex-shrink: 0;" class="font-mono-numbers">1</div>
+                  <div>
+                    <h4 style="font-size: 0.9375rem; margin-bottom: 4px;">Inquiry & Document Evaluation</h4>
+                    <p style="font-size: 0.8125rem;">Submit preliminary inquiry online or present PSA Birth Certificate, Form 138 (Report Card), and Good Moral Certificate at the Registrar.</p>
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: 12px;">
+                  <div style="width: 32px; height: 32px; border-radius: var(--radius-full); background-color: var(--color-accent); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8125rem; flex-shrink: 0;" class="font-mono-numbers">2</div>
+                  <div>
+                    <h4 style="font-size: 0.9375rem; margin-bottom: 4px;">Entrance Assessment & Interview</h4>
+                    <p style="font-size: 0.8125rem;">Complete the basic diagnostic assessment and brief guidance counselor interview for academic placement and ESC grant eligibility.</p>
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: 12px;">
+                  <div style="width: 32px; height: 32px; border-radius: var(--radius-full); background-color: var(--color-secondary); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8125rem; flex-shrink: 0;" class="font-mono-numbers">3</div>
+                  <div>
+                    <h4 style="font-size: 0.9375rem; margin-bottom: 4px;">Registration & Official Enrollment</h4>
+                    <p style="font-size: 0.8125rem;">Secure official registration clearance at the Cashier's window and claim your student ID and orientation schedule.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--color-border);">
+                <button type="button" onclick="triggerPrintProspectus()" class="btn-primary" style="width: 100%; justify-content: center;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                  Print Admissions Prospectus
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Ergonomic Admissions Form -->
+          <div style="grid-column: span 12; @media (min-width: 1024px) { grid-column: span 7; }">
+            <div class="form-container">
+              <div style="margin-bottom: 20px; border-bottom: 1px solid var(--color-border); padding-bottom: 12px;">
+                <h3 style="font-size: 1.125rem;">Admissions Inquiry Form</h3>
+                <p style="font-size: 0.75rem;">Academic Year 2026–2027 • Saint Catherine's College</p>
+              </div>
+
+              <!-- Interactive Form -->
+              <form id="admissions-inquiry-form" novalidate>
+                <!-- Row 1: Student Names -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="enroll-fname" class="form-label">First Name <span style="color: var(--color-status-danger);">*</span></label>
+                    <input type="text" id="enroll-fname" class="form-input" placeholder="e.g. Maria" required>
+                    <span class="error-message">First name is required.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="enroll-lname" class="form-label">Last Name <span style="color: var(--color-status-danger);">*</span></label>
+                    <input type="text" id="enroll-lname" class="form-input" placeholder="e.g. Santos" required>
+                    <span class="error-message">Last name is required.</span>
+                  </div>
+                </div>
+
+                <!-- Row 2: Contact Number (Masked) & Email -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="enroll-mobile" class="form-label">
+                      Mobile Contact Number <span style="color: var(--color-status-danger);">*</span>
+                      <span class="form-hint">11 Digits (09xxxxxxxxx)</span>
+                    </label>
+                    <input type="tel" id="enroll-mobile" class="form-input font-mono-numbers" placeholder="09171234567" maxlength="11" required>
+                    <span class="error-message">Valid 11-digit mobile number required.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="enroll-email" class="form-label">Email Address <span style="color: var(--color-status-danger);">*</span></label>
+                    <input type="email" id="enroll-email" class="form-input" placeholder="student@example.com" required>
+                    <span class="error-message">Valid email address is required.</span>
+                  </div>
+                </div>
+
+                <!-- Row 3: LRN & Date of Birth with Auto Age Calculation -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="enroll-lrn" class="form-label">
+                      Learner Reference Number (LRN)
+                      <span class="form-hint">12 Digits (Basic Ed / SHS)</span>
+                    </label>
+                    <input type="text" id="enroll-lrn" class="form-input font-mono-numbers" placeholder="102345678901" maxlength="12">
+                    <span class="error-message">LRN must consist of 12 numerical digits.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="enroll-bdate" class="form-label">Date of Birth <span style="color: var(--color-status-danger);">*</span></label>
+                    <input type="date" id="enroll-bdate" class="form-input font-mono-numbers" required>
+                    <span class="error-message">Date of birth is required.</span>
+                  </div>
+                </div>
+
+                <!-- Auto-Calculated Age Display (Pillar 4) -->
+                <div class="form-group">
+                  <label class="form-label">Auto-Calculated Applicant Age & Department Eligibility</label>
+                  <div id="enroll-age-display" class="calc-placeholder-pill">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="placeholder-icon" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <span>Select birthdate above to auto-calculate</span>
+                  </div>
+                </div>
+
+                <!-- Academic Program Selection -->
+                <div class="form-group">
+                  <label for="enroll-program" class="form-label">Intended Academic Department / Strand <span style="color: var(--color-status-danger);">*</span></label>
+                  <select id="enroll-program" class="form-select" required>
+                    <option value="">Select intended educational program...</option>
+                    <optgroup label="Senior High School Academic Strands (Grades 11–12)">
+                      <option value="shs-abm">Accountancy, Business and Management (ABM)</option>
+                      <option value="shs-humss">Humanities and Social Sciences (HUMSS)</option>
+                      <option value="shs-stem">Science, Technology, Engineering, and Mathematics (STEM)</option>
+                      <option value="shs-gas">General Academic Strand (GAS)</option>
+                      <option value="shs-tvl">Technical-Vocational-Livelihood (TVL - ICT / Home Economics)</option>
+                    </optgroup>
+                    <optgroup label="College of Teacher Education (Higher Ed)">
+                      <option value="col-beed">Bachelor of Elementary Education (BEEd)</option>
+                      <option value="col-bsed-eng">Bachelor of Secondary Education (BSEd) - English</option>
+                      <option value="col-bsed-sci">Bachelor of Secondary Education (BSEd) - Science & Math</option>
+                    </optgroup>
+                    <optgroup label="College of Business Administration">
+                      <option value="col-bsba-hr">BSBA Major in Human Resource Management</option>
+                      <option value="col-bsba-mkt">BSBA Major in Marketing Management</option>
+                    </optgroup>
+                    <optgroup label="Basic Education Department">
+                      <option value="basic-jhs">Junior High School (Grades 7 to 10 - ESC Subsidy)</option>
+                      <option value="basic-elem">Elementary Department (Grades 1 to 6 - PAASCU)</option>
+                      <option value="basic-kinder">Kindergarten / Early Childhood Education</option>
+                    </optgroup>
+                  </select>
+                  <span class="error-message">Please select an intended academic program.</span>
+                </div>
+
+                <!-- Action Bar with Destructive Safeguard (Pillar 1 & 5) -->
+                <div class="form-actions">
+                  <button type="button" id="safe-reset-btn" class="btn-reset">
+                    Clear Form
+                  </button>
+                  <button type="submit" class="btn-primary">
+                    Submit Enrollment Inquiry
+                  </button>
+                </div>
+              </form>
+
+              <!-- Success Notification Banner -->
+              <div id="inquiry-success-banner" style="display: none; margin-top: 16px; padding: 16px; background-color: #ECFDF5; border: 1px solid #A7F3D0; border-radius: var(--radius-sm); color: #065F46;">
+                <h4 style="color: #065F46; font-size: 0.9375rem; margin-bottom: 4px;">Inquiry Successfully Registered</h4>
+                <p style="font-size: 0.8125rem; color: #047857;">Your enrollment inquiry has been recorded. Please save or print your preliminary registration voucher below.</p>
+                <div id="printable-inquiry-slip"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CAMPUS DIRECTORY & CONTACT INFORMATION -->
+    <section id="contact" class="section-wrapper-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Institutional Directory</span>
+          <h2 class="section-title">Campus Contact Information & Location</h2>
+          <p class="section-lead">
+            Reach out to our administrative offices, guidance department, or registrar. Visit our heritage campus in the historical city of Carcar, Cebu.
+          </p>
+        </div>
+
+        <div class="grid-12">
+          <!-- Contact Details Directory -->
+          <div style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
+            <div class="card" style="height: 100%;">
+              <h3 style="font-size: 1.125rem; margin-bottom: 16px;">Administrative Contact Directory</h3>
+              
+              <div style="display: flex; flex-direction: column; gap: 16px; font-size: 0.875rem;">
+                <div>
+                  <strong style="color: var(--color-primary); display: block;">Campus Address:</strong>
+                  <p>Saint Catherine's College, Carcar City, Cebu, 6019 Philippines</p>
+                </div>
+
+                <div>
+                  <strong style="color: var(--color-primary); display: block;">Office of the Registrar:</strong>
+                  <p class="font-mono-numbers">Telephone: (032) 487-9200 • registrar@stcatherines.edu.ph</p>
+                </div>
+
+                <div>
+                  <strong style="color: var(--color-primary); display: block;">Admissions & Guidance Office:</strong>
+                  <p class="font-mono-numbers">Telephone: (032) 487-9201 • admissions@stcatherines.edu.ph</p>
+                </div>
+
+                <div>
+                  <strong style="color: var(--color-primary); display: block;">Basic Education & Senior High Principal:</strong>
+                  <p class="font-mono-numbers">Telephone: (032) 487-9202 • principal@stcatherines.edu.ph</p>
+                </div>
+
+                <div>
+                  <strong style="color: var(--color-primary); display: block;">Office Hours:</strong>
+                  <p>Monday to Friday: 8:00 AM – 5:00 PM | Saturday: 8:00 AM – 12:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Geographical Location & Map Reference -->
+          <div style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
+            <div class="card" style="height: 100%;">
+              <h3 style="font-size: 1.125rem; margin-bottom: 12px;">Geographic Coordinates & Weather Station</h3>
+              <p style="font-size: 0.8125rem; margin-bottom: 16px;">
+                Situated in southern Cebu along the historical corridor of Carcar City. Our on-campus meteorological telemetry directly benchmarks localized conditions for the central Visayan basin.
+              </p>
+
+              <div class="geo-specs-grid">
+                <div class="geo-spec-card">
+                  <div class="geo-spec-header">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="geo-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <span class="geo-spec-label">Latitude</span>
+                  </div>
+                  <div class="geo-spec-val font-mono-numbers">10.1100° N</div>
+                  <span class="geo-spec-hint">Equatorial North</span>
+                </div>
+
+                <div class="geo-spec-card">
+                  <div class="geo-spec-header">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="geo-icon"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                    <span class="geo-spec-label">Longitude</span>
+                  </div>
+                  <div class="geo-spec-val font-mono-numbers">123.6400° E</div>
+                  <span class="geo-spec-hint">Meridian East</span>
+                </div>
+
+                <div class="geo-spec-card">
+                  <div class="geo-spec-header">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="geo-icon"><polygon points="12 2 2 22 22 22 12 2"></polygon><line x1="12" y1="14" x2="12" y2="18"></line></svg>
+                    <span class="geo-spec-label">Elevation</span>
+                  </div>
+                  <div class="geo-spec-val font-mono-numbers">14 m MSL</div>
+                  <span class="geo-spec-hint">Mean Sea Level</span>
+                </div>
+
+                <div class="geo-spec-card">
+                  <div class="geo-spec-header">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="geo-icon"><path d="M12 2v20"></path><path d="m4.93 4.93 14.14 14.14"></path><path d="M2 12h20"></path><path d="m4.93 19.07 14.14-14.14"></path></svg>
+                    <span class="geo-spec-label">Radar Sector</span>
+                  </div>
+                  <div class="geo-spec-val">Visayas Basin</div>
+                  <span class="geo-spec-hint" style="color: var(--color-status-success); font-weight: 600;">DOST-PAGASA Live</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- INSTITUTIONAL SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Institutional Authority -->
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <div class="brand-crest" style="background-color: #0F172A;">SCC</div>
+            <h4 style="margin-bottom: 0; font-size: 1rem; color: #FFFFFF;">Saint Catherine's College</h4>
+          </div>
+          <p style="font-size: 0.8125rem; line-height: 1.6; color: #94A3B8;">
+            A premier Dominican Catholic educational institution in Carcar City, Cebu, dedicated to forming intellectual competence, spiritual virtue, and civic responsibility since 1923.
+          </p>
+          <div style="margin-top: 12px; font-size: 0.75rem; color: #CBD5E1;">
+            <span>PAASCU Level II Accredited</span> • <span>DepEd & CHED Certified</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Academic Programs</h4>
+          <ul class="footer-links">
+            <li><a href="#academics">Basic Education (K-10)</a></li>
+            <li><a href="#academics">SHS ABM Strand</a></li>
+            <li><a href="#academics">SHS HUMSS Strand</a></li>
+            <li><a href="#academics">College of Teacher Education</a></li>
+            <li><a href="#academics">College of Business Administration</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Student Hub -->
+        <div class="footer-col">
+          <h4>Campus & Weather</h4>
+          <ul class="footer-links">
+            <li><a href="#weather">Live Meteorological Station</a></li>
+            <li><a href="#weather">Doppler Radar & Satellite</a></li>
+            <li><a href="#weather">Heat Index Safety Tool</a></li>
+            <li><a href="#admissions">Admissions Guidelines</a></li>
+            <li><a href="#contact">Campus Directory</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Project Attribution -->
+        <div class="footer-col">
+          <h4>Performance Task Notice</h4>
+          <p style="font-size: 0.75rem; color: #94A3B8; margin-bottom: 8px;">
+            Developed for the Grade 12 Techno WEATHER Performance Task (ABM / HUMSS Strands). Fully compliant with official DOST-PAGASA advisory guidelines and web development standards.
+          </p>
+          <p style="font-size: 0.6875rem; color: #64748B;" class="font-mono-numbers">
+            Meteorological Sources: DOST-PAGASA & Open-Meteo API
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom font-mono-numbers">
+        <div>
+          &copy; 1923–2026 Saint Catherine's College • Carcar City, Cebu, Philippines. All Rights Reserved.
+        </div>
+        <div>
+          Philippine Standard Time (PST): GMT+8
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Modules -->
+  <script src="js/weather.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
