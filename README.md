@@ -45,21 +45,33 @@ This project delivers a high-performance, accessible, and responsive institution
 - Strict WCAG AAA/AA contrast compliance ensuring effortless reading of typography without optical glare.
 - Quick statistical proof metrics: 103 Years of Formation, PAASCU Level II Accredited, 100% DepEd/CHED Compliant, PAGASA Telemetry Station.
 
-### 3. Comprehensive Academic Continuum
+### 3. Institutional Philosophy & The Five Core Values
+- Grounded in Dominican Catholic traditions and inspired by St. Catherine of Alexandria and St. Dominic de Guzman.
+- Official institutional Vision and Mission guiding student formation toward global competence and community service.
+- **The 5 Core Values of Catherinean Formation**:
+  1. *Compassion for Others*: Active empathy, mutual care, and benevolent solidarity with the marginalized.
+  2. *Conviction of Faith*: Steadfast spiritual devotion, ethical discipline, and Catholic gospel principles.
+  3. *Commitment to Harmony*: Fostering peace, respectful dialogue, and environmental stewardship.
+  4. *Christ-Centered in Lifestyle*: Living the Gospel in daily decisions, leadership, and personal conduct.
+  5. *Competence and Excellence*: Research distinction, technical skill mastery, and readiness for the world of work.
+
+### 4. Comprehensive Academic Continuum
 - Interactive tabbed strand and degree directory:
   - **Basic Education**: Kindergarten, Elementary (Grades 1-6), Junior High School (Grades 7-10).
   - **Senior High School**: Accountancy, Business and Management (ABM), Humanities and Social Sciences (HUMSS), Science, Technology, Engineering and Mathematics (STEM), General Academic Strand (GAS), Technical-Vocational-Livelihood (TVL).
   - **Higher Education**: College of Teacher Education (BEEd, BSEd English/Math/Filipino/SocStud), College of Business Administration (BSBA Financial Management, Marketing Management).
 
-### 4. Official Weather & Disaster Preparedness Hub
+### 5. Official Weather & Disaster Preparedness Hub
 - **Live Meteorological Telemetry**: Real-time ambient temperature, apparent heat index, relative humidity, wind velocity, atmospheric pressure, and cloud cover.
-- **Doppler Radar & Satellite Tracking**: Tabbed container switching seamlessly between Visayas Doppler precipitation radar and regional satellite cloud imagery.
+- **Asymmetric Radar Command Console**:
+  - *Left Wing Viewport*: High-clarity Visayas Doppler rain radar and regional satellite cloud imagery with live pulsing station indicator and layer switcher.
+  - *Precipitation Reflectivity (dBZ) Spectrum Strip*: Integrated scale tracking precipitation intensity from Light (20 dBZ) to Severe (55+ dBZ) with Mactan S-Band Doppler metadata.
+  - *Right Wing Emergency Feed*: Vertical command stack linking directly to verified DOST-PAGASA advisory gateways (Tropical Cyclone Bulletins, Heavy Rainfall Warnings, General Flood Advisories, National Heat Index Bulletins).
 - **Interactive Heat Index Safety Calculator**:
   - Live dual sliders for ambient temperature (20°C to 45°C) and relative humidity (20% to 100%).
   - Three-part visual output hierarchy: prominent tabular metric (`font-variant-numeric: tabular-nums`), 5-stage segmented progress meter (`Normal`, `Caution`, `Ext. Caution`, `Danger`, `Ext. Danger`), and modular health risk / campus operational guidance sub-cards.
-- **Verified Emergency Gateways**: Direct external links to DOST-PAGASA Tropical Cyclone Warnings, Severe Weather Bulletins, Flood Advisories, and Heat Index Bulletins.
 
-### 5. Admissions Terminal & 7 UI/UX Ergonomic Pillars
+### 6. Admissions Terminal & 7 UI/UX Ergonomic Pillars
 - **Destructive Action Safeguard**: 2-step button state requiring confirmation within 4 seconds before clearing unsaved input.
 - **Proactive Input Sanitization**: Real-time keystroke filtering restricting mobile numbers to 11 digits (`09XXXXXXXXX`) and student LRNs to 12 numerical digits.
 - **Visual Error Highlighting & Auto-Focus**: Automatic highlighting of invalid inputs with instant viewport focus on the first invalid field upon submission attempt.

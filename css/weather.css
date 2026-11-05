@@ -362,38 +362,95 @@
   font-family: var(--font-sans);
 }
 
-/* Doppler Radar & Satellite Container */
-.radar-card {
+/* Asymmetric Radar Command Console & Emergency Advisory Gateway */
+.radar-console-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--space-6);
   box-shadow: var(--shadow-sm);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.radar-header-tabs {
+@media (min-width: 1024px) {
+  .radar-console-layout {
+    grid-template-columns: 1.8fr 1fr;
+  }
+}
+
+.radar-primary-wing {
+  display: flex;
+  flex-direction: column;
+}
+
+.radar-console-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: var(--space-2);
+  gap: var(--space-3);
   margin-bottom: var(--space-4);
+}
+
+.radar-header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.radar-live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.radar-live-pulse {
+  width: 8px;
+  height: 8px;
+  background-color: #10B981;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+  animation: radarPulse 2s infinite;
+}
+
+@keyframes radarPulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.radar-sector-code {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-text-subtle);
+}
+
+.radar-console-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text-main);
 }
 
 .radar-toggle-group {
   display: inline-flex;
+  background-color: var(--color-bg-muted);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  overflow: hidden;
+  padding: 3px;
+  gap: 3px;
 }
 
 .radar-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 6px 14px;
-  background-color: var(--color-bg-surface);
+  background-color: transparent;
   border: none;
+  border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--color-text-muted);
@@ -401,14 +458,19 @@
   transition: all 0.15s ease;
 }
 
+.radar-tab-btn:hover {
+  color: var(--color-primary);
+}
+
 .radar-tab-btn.active {
   background-color: var(--color-primary);
   color: #FFFFFF;
+  box-shadow: var(--shadow-sm);
 }
 
 .radar-embed-frame {
   width: 100%;
-  height: 380px;
+  height: 440px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   background-color: #0F172A;
@@ -421,74 +483,164 @@
   border: 0;
 }
 
-/* Official PAGASA Gateway Cards */
-.pagasa-gateway-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: var(--space-4);
-  margin-top: var(--space-6);
-}
-
-@media (min-width: 640px) {
-  .pagasa-gateway-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .pagasa-gateway-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.pagasa-bulletin-card {
-  background-color: var(--color-bg-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  padding: var(--space-4);
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.pagasa-bulletin-card:hover {
-  border-color: var(--color-primary);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
-}
-
-.bulletin-card-tag {
-  font-size: 0.6875rem;
-  font-weight: 700;
-  color: var(--color-accent-hover);
-  text-transform: uppercase;
-  margin-bottom: var(--space-1);
-}
-
-.bulletin-card-title {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  margin-bottom: var(--space-2);
-}
-
-.bulletin-card-desc {
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-  line-height: 1.4;
-}
-
-.bulletin-card-footer {
-  margin-top: var(--space-3);
-  padding-top: var(--space-2);
-  border-top: 1px solid var(--color-border);
-  font-size: 0.6875rem;
-  color: var(--color-secondary);
-  font-weight: 600;
+/* dBZ Precipitation Reflectivity Scale Strip */
+.radar-legend-strip {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-bg-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+}
+
+.legend-scale-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.legend-title {
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.dbz-spectrum-bar {
+  display: flex;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.dbz-step {
+  padding: 2px 8px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.dbz-light { background-color: #0284C7; }
+.dbz-mod { background-color: #16A34A; }
+.dbz-heavy { background-color: #F59E0B; }
+.dbz-severe { background-color: #DC2626; }
+
+.legend-meta {
+  color: var(--color-text-subtle);
+  display: flex;
+  gap: var(--space-3);
+}
+
+/* Vertical Emergency Advisory Feed */
+.radar-sidebar-wing {
+  display: flex;
+  flex-direction: column;
+}
+
+.advisory-feed-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.advisory-feed-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.advisory-feed-sub {
+  font-size: 0.6875rem;
+  color: var(--color-text-subtle);
+  display: block;
+}
+
+.advisory-vertical-feed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  height: 100%;
+}
+
+.advisory-feed-item {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-bg-muted);
+  border: 1px solid var(--color-border);
+  border-left-width: 4px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.advisory-feed-item:hover {
+  background-color: #FFFFFF;
+  box-shadow: var(--shadow-sm);
+  transform: translateX(2px);
+}
+
+.item-cyclone { border-left-color: #DC2626; }
+.item-rainfall { border-left-color: #F59E0B; }
+.item-flood { border-left-color: #0284C7; }
+.item-heat { border-left-color: #7C3AED; }
+
+.feed-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.feed-item-badge {
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.badge-cyclone { background-color: #FEE2E2; color: #991B1B; }
+.badge-rainfall { background-color: #FEF3C7; color: #92400E; }
+.badge-flood { background-color: #E0F2FE; color: #075985; }
+.badge-heat { background-color: #F3E8FF; color: #6B21A8; }
+
+.feed-link-arrow {
+  color: var(--color-text-subtle);
+  font-size: 0.8125rem;
+  transition: transform 0.2s ease;
+}
+
+.advisory-feed-item:hover .feed-link-arrow {
+  color: var(--color-primary);
+  transform: translateX(3px);
+}
+
+.feed-item-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 2px;
+}
+
+.feed-item-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+
+.feed-item-src {
+  font-size: 0.6875rem;
+  color: var(--color-text-subtle);
+  font-weight: 600;
+  margin-top: auto;
 }
