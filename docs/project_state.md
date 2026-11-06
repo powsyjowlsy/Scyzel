@@ -25,6 +25,7 @@
 - [x] Milestone 15: Institutional Philosophy Update (Official Vision, Mission & 5 Core Values) & Asymmetric Radar Command Console Redesign
 - [x] Milestone 16: Aesthetic Redline Protocol Integration (Rule 12 Vector 3b) & Site-Wide Badge/Pill Slop Unboxing
 - [x] Milestone 17: Official Admissions, Senior High Career Pathways & Student Life Curation (Integrated 14-Step Enrollment Roadmap, 6-Step Admission Rail, 3-Track Segmented Requirements, SCC Blue Warriors Athletics Schedules, and Curated Campus Traditions Photo Gallery)
+- [x] Milestone 18: Photo-Driven Varsity Tryouts & Accessible High-Resolution Image Lightbox (Converted Varsity & Athletic Program to photo-driven cards using official announcements for Badminton/Basketball, Volleyball, and Taekwondo; implemented keyboard-accessible 8-specimen lightbox gallery with counter, backdrop blur, and focus trap)
 
 ## Verified Project Architecture & Data Contracts
 1. **Zero Fabricated Weather Data**: Real meteorological telemetry is fetched live from Open-Meteo for Carcar City coordinates (`latitude=10.11`, `longitude=123.64`) with robust offline cached fallbacks.
