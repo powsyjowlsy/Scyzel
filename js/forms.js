@@ -264,6 +264,44 @@ function triggerPrintProspectus() {
   window.print();
 }
 
+/**
+ * 3-Way Requirement Tab Switcher (College New, College Transferee, Basic Ed & SHS)
+ * @param {'col-new' | 'col-trans' | 'basic-ed'} tabType 
+ */
+function switchReqTab(tabType) {
+  const tabs = ['col-new', 'col-trans', 'basic-ed'];
+  tabs.forEach(t => {
+    const btn = document.getElementById(`tab-${t}`);
+    const panel = document.getElementById(`panel-${t}`);
+    if (btn && panel) {
+      if (t === tabType) {
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        panel.style.display = 'block';
+      } else {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+        panel.style.display = 'none';
+      }
+    }
+  });
+}
+
+/**
+ * Toggles the 14-Step Detailed College Enrollment Roadmap Tray
+ */
+function toggleEnrollmentRoadmap() {
+  const tray = document.getElementById('enrollment-roadmap-tray');
+  const icon = document.getElementById('roadmap-arrow-icon');
+  if (!tray) return;
+
+  const isHidden = window.getComputedStyle(tray).display === 'none';
+  tray.style.display = isHidden ? 'grid' : 'none';
+  if (icon) {
+    icon.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+  }
+}
+
 // Attach event listeners on load
 document.addEventListener("DOMContentLoaded", () => {
   initInputSanitization();

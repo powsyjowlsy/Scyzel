@@ -24,6 +24,7 @@
 - [x] Milestone 14: GitHub Public Repository Deployment (`powsyjowlsy/Scyzel`), `.gitignore` & Signature Academic README Setup
 - [x] Milestone 15: Institutional Philosophy Update (Official Vision, Mission & 5 Core Values) & Asymmetric Radar Command Console Redesign
 - [x] Milestone 16: Aesthetic Redline Protocol Integration (Rule 12 Vector 3b) & Site-Wide Badge/Pill Slop Unboxing
+- [x] Milestone 17: Official Admissions, Senior High Career Pathways & Student Life Curation (Integrated 14-Step Enrollment Roadmap, 6-Step Admission Rail, 3-Track Segmented Requirements, SCC Blue Warriors Athletics Schedules, and Curated Campus Traditions Photo Gallery)
 
 ## Verified Project Architecture & Data Contracts
 1. **Zero Fabricated Weather Data**: Real meteorological telemetry is fetched live from Open-Meteo for Carcar City coordinates (`latitude=10.11`, `longitude=123.64`) with robust offline cached fallbacks.
