@@ -1671,10 +1671,15 @@ p {
   position: fixed;
   inset: 0;
   z-index: 1000;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: var(--space-4);
+}
+
+.lightbox-modal.active,
+.lightbox-modal[aria-hidden="false"] {
+  display: flex;
 }
 
 .lightbox-backdrop {
