@@ -30,6 +30,7 @@
 - [x] Milestone 20: Senior High Grid Height Decoupling (Applied `align-items: start` to `.shs-showcase-grid` and `height: auto` on photo card to let both cards size independently, eliminating trailing white void in `.shs-pathway-card`)
 - [x] Milestone 21: Hero Campus Life Video Reel Integration (Restructured Hero into asymmetric 2-column split grid pairing institutional narrative with an authentic, self-hosted Catherinian Insider S.Y. 2024–2025 opening video reel player card with ambient autoplay loop, sound toggle, play/pause, and fullscreen controls)
 - [x] Milestone 22: Modern Minimal Hero Video Player Redesign (Eliminated AI-slop widget tells—sandwich header/footer bars and saturated electric cyan pill badges—replacing them with a full-bleed portrait viewport, subtle top brand scrim, glass pill audio/video controls with live text states, and understated editorial citation)
+- [x] Milestone 23: Hero Campus Reel Player Geometry & Layout Overhaul (Eliminated 107px right-side letterbox void by locking card to 320px width and moving brand scrim inside viewport; restructured bottom scrim into a two-tier column stack granting 286px full width to caption typography and docking frosted glass controls in a dedicated action row)
 
 ## Verified Project Architecture & Data Contracts
 1. **Zero Fabricated Weather Data**: Real meteorological telemetry is fetched live from Open-Meteo for Carcar City coordinates (`latitude=10.11`, `longitude=123.64`) with robust offline cached fallbacks.

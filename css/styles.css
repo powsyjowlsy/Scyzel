@@ -441,25 +441,23 @@ p {
 /* Modern Minimal Editorial Campus Reel Card */
 .hero-reel-card {
   position: relative;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   background-color: #0F172A;
-  box-shadow: 0 25px 35px -10px rgba(0, 0, 0, 0.6), 0 10px 15px -5px rgba(0, 0, 0, 0.4);
-  max-width: 400px;
+  box-shadow: 0 25px 45px -10px rgba(0, 0, 0, 0.7), 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+  max-width: 320px;
   margin: 0 auto;
   width: 100%;
 }
 
 .hero-reel-viewport {
   position: relative;
+  width: 100%;
   aspect-ratio: 9 / 16;
-  max-height: 520px;
   overflow: hidden;
   background-color: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 .hero-reel-viewport video {
@@ -517,10 +515,9 @@ p {
   left: 0;
   right: 0;
   padding: var(--space-8) var(--space-4) var(--space-4);
-  background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.6) 60%, transparent 100%);
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.65) 55%, transparent 100%);
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
   gap: var(--space-3);
   z-index: 10;
 }
@@ -547,8 +544,14 @@ p {
 .hero-reel-actions {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero-reel-controls-group {
+  display: flex;
+  align-items: center;
   gap: 6px;
-  flex-shrink: 0;
 }
 
 .hero-reel-btn {
