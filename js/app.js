@@ -264,6 +264,7 @@ function initHeroVideoPlayer() {
   const pauseIcon = document.getElementById("hero-pause-icon");
   const soundMutedIcon = document.getElementById("hero-sound-muted-icon");
   const soundOnIcon = document.getElementById("hero-sound-on-icon");
+  const soundLabel = document.getElementById("hero-sound-label");
 
   if (playBtn) {
     playBtn.addEventListener("click", () => {
@@ -287,10 +288,12 @@ function initHeroVideoPlayer() {
       if (video.muted) {
         if (soundMutedIcon) soundMutedIcon.style.display = "block";
         if (soundOnIcon) soundOnIcon.style.display = "none";
+        if (soundLabel) soundLabel.textContent = "Sound Off";
         soundBtn.setAttribute("aria-label", "Unmute campus video sound");
       } else {
         if (soundMutedIcon) soundMutedIcon.style.display = "none";
         if (soundOnIcon) soundOnIcon.style.display = "block";
+        if (soundLabel) soundLabel.textContent = "Sound On";
         soundBtn.setAttribute("aria-label", "Mute campus video sound");
       }
     });
