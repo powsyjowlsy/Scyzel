@@ -28,6 +28,7 @@
 - [x] Milestone 18: Photo-Driven Varsity Tryouts & Accessible High-Resolution Image Lightbox (Converted Varsity & Athletic Program to photo-driven cards using official announcements for Badminton/Basketball, Volleyball, and Taekwondo; implemented keyboard-accessible 8-specimen lightbox gallery with counter, backdrop blur, focus trap, and fixed initial dormant display state)
 - [x] Milestone 19: Senior High Card Aspect Polish & Varsity Typography Upgrade (Eliminated trailing empty void in `.shs-photo-card` via flexible container expansion, anchored caption to bottom; stripped typewriter monospace from location text in `.tryout-schedule-row` in favor of primary sans-serif with scoped tabular time numerals)
 - [x] Milestone 20: Senior High Grid Height Decoupling (Applied `align-items: start` to `.shs-showcase-grid` and `height: auto` on photo card to let both cards size independently, eliminating trailing white void in `.shs-pathway-card`)
+- [x] Milestone 21: Hero Campus Life Video Reel Integration (Restructured Hero into asymmetric 2-column split grid pairing institutional narrative with an authentic, self-hosted Catherinian Insider S.Y. 2024–2025 opening video reel player card with ambient autoplay loop, sound toggle, play/pause, and fullscreen controls)
 
 ## Verified Project Architecture & Data Contracts
 1. **Zero Fabricated Weather Data**: Real meteorological telemetry is fetched live from Open-Meteo for Carcar City coordinates (`latitude=10.11`, `longitude=123.64`) with robust offline cached fallbacks.

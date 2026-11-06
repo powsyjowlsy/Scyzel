@@ -251,10 +251,79 @@ function closeImageLightbox() {
   }
 }
 
+// Hero Section Campus Life Video Player Controller
+function initHeroVideoPlayer() {
+  const video = document.getElementById("hero-campus-video");
+  const playBtn = document.getElementById("hero-video-play-btn");
+  const soundBtn = document.getElementById("hero-video-sound-btn");
+  const fullscreenBtn = document.getElementById("hero-video-fullscreen-btn");
+
+  if (!video) return;
+
+  const playIcon = document.getElementById("hero-play-icon");
+  const pauseIcon = document.getElementById("hero-pause-icon");
+  const soundMutedIcon = document.getElementById("hero-sound-muted-icon");
+  const soundOnIcon = document.getElementById("hero-sound-on-icon");
+
+  if (playBtn) {
+    playBtn.addEventListener("click", () => {
+      if (video.paused) {
+        video.play();
+        if (playIcon) playIcon.style.display = "none";
+        if (pauseIcon) pauseIcon.style.display = "block";
+        playBtn.setAttribute("aria-label", "Pause campus video");
+      } else {
+        video.pause();
+        if (playIcon) playIcon.style.display = "block";
+        if (pauseIcon) pauseIcon.style.display = "none";
+        playBtn.setAttribute("aria-label", "Play campus video");
+      }
+    });
+  }
+
+  if (soundBtn) {
+    soundBtn.addEventListener("click", () => {
+      video.muted = !video.muted;
+      if (video.muted) {
+        if (soundMutedIcon) soundMutedIcon.style.display = "block";
+        if (soundOnIcon) soundOnIcon.style.display = "none";
+        soundBtn.setAttribute("aria-label", "Unmute campus video sound");
+      } else {
+        if (soundMutedIcon) soundMutedIcon.style.display = "none";
+        if (soundOnIcon) soundOnIcon.style.display = "block";
+        soundBtn.setAttribute("aria-label", "Mute campus video sound");
+      }
+    });
+  }
+
+  if (fullscreenBtn) {
+    fullscreenBtn.addEventListener("click", () => {
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      }
+    });
+  }
+
+  video.addEventListener("play", () => {
+    if (playIcon) playIcon.style.display = "none";
+    if (pauseIcon) pauseIcon.style.display = "block";
+  });
+
+  video.addEventListener("pause", () => {
+    if (playIcon) playIcon.style.display = "block";
+    if (pauseIcon) pauseIcon.style.display = "none";
+  });
+}
+
 // Global initialization
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initScrollspy();
   initAcademicFilters();
   initImageLightbox();
+  initHeroVideoPlayer();
 });
