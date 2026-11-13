@@ -251,6 +251,41 @@ function closeImageLightbox() {
   }
 }
 
+// Campus Facilities & Landmarks Category Filter Handler
+function initCampusSpaceFilters() {
+  const filterBtns = document.querySelectorAll(".space-filter-btn");
+  const spaceCards = document.querySelectorAll(".campus-space-card");
+  const grid = document.getElementById("campus-spaces-grid");
+
+  if (!filterBtns.length || !spaceCards.length || !grid) return;
+
+  function applySpaceFilter(filterKey) {
+    let visibleCount = 0;
+
+    spaceCards.forEach(card => {
+      const matches = filterKey === "all" || card.dataset.spaceCategory === filterKey;
+      card.style.display = matches ? "flex" : "none";
+      if (matches) visibleCount += 1;
+    });
+
+    grid.setAttribute("data-layout", visibleCount === 3 ? "three" : "four");
+
+    filterBtns.forEach(btn => {
+      const isSelected = btn.dataset.spaceFilter === filterKey;
+      btn.classList.toggle("active", isSelected);
+      btn.setAttribute("aria-pressed", isSelected ? "true" : "false");
+    });
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      applySpaceFilter(btn.dataset.spaceFilter || "heritage");
+    });
+  });
+
+  applySpaceFilter("heritage");
+}
+
 // Hero Section Campus Life Video Player Controller
 function initHeroVideoPlayer() {
   const video = document.getElementById("hero-campus-video");
@@ -327,6 +362,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initScrollspy();
   initAcademicFilters();
+  initCampusSpaceFilters();
   initImageLightbox();
   initHeroVideoPlayer();
 });

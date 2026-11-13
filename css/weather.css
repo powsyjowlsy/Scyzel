@@ -59,7 +59,7 @@
 }
 
 .station-eyebrow-text {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -104,7 +104,7 @@
 }
 
 .heat-index-label {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: var(--color-text-subtle);
   font-weight: 500;
 }
@@ -131,7 +131,7 @@
 }
 
 .metric-cell-label {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   color: var(--color-text-subtle);
   display: block;
   font-weight: 600;
@@ -189,7 +189,7 @@
 }
 
 .alert-tier-title {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -199,7 +199,7 @@
 }
 
 .alert-tier-body {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   line-height: 1.5;
 }
 
@@ -268,7 +268,7 @@
 }
 
 .hi-small-label {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--color-text-subtle);
@@ -355,7 +355,7 @@
 }
 
 .guidance-label {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 700;
   color: var(--color-primary);
   text-transform: uppercase;
@@ -431,7 +431,7 @@
 }
 
 .radar-sector-code {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   color: var(--color-text-subtle);
@@ -460,7 +460,7 @@
   background-color: transparent;
   border: none;
   border-radius: 4px;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   color: var(--color-text-muted);
   cursor: pointer;
@@ -504,7 +504,7 @@
   background-color: var(--color-bg-muted);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
 }
 
 .legend-scale-group {
@@ -527,7 +527,7 @@
 
 .dbz-step {
   padding: 2px 8px;
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: #FFFFFF;
 }
@@ -565,7 +565,7 @@
 }
 
 .advisory-feed-sub {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   color: var(--color-text-subtle);
   display: block;
 }
@@ -609,7 +609,7 @@
 }
 
 .feed-category-label {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -635,14 +635,14 @@
 }
 
 .feed-item-desc {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: var(--color-text-muted);
   line-height: 1.45;
   margin-bottom: 6px;
 }
 
 .feed-item-src {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   color: var(--color-text-subtle);
   font-weight: 600;
   margin-top: auto;
