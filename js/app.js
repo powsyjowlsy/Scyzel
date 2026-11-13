@@ -1,9 +1,5 @@
-/**
- * St. Catherine's College Main Application Controller
- * Handles Navigation, Mobile Drawer, Academic Filters & Modal Workflows
- */
 
-// Mobile Navigation Toggle
+
 function initNavigation() {
   const toggleBtn = document.getElementById("mobile-menu-toggle");
   const drawer = document.getElementById("mobile-nav-drawer");
@@ -22,7 +18,6 @@ function initNavigation() {
     }
   });
 
-  // Close drawer when a link is clicked
   drawerLinks.forEach(link => {
     link.addEventListener("click", () => {
       drawer.classList.remove("open");
@@ -31,7 +26,6 @@ function initNavigation() {
   });
 }
 
-// Scrollspy for Active Navigation Link Highlighting
 function initScrollspy() {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
@@ -58,14 +52,12 @@ function initScrollspy() {
   window.addEventListener("scroll", onScroll, { passive: true });
 }
 
-// Academic Filter Handler
 function initAcademicFilters() {
   const filterBtns = document.querySelectorAll(".filter-btn");
   const programCards = document.querySelectorAll(".academic-card");
 
   filterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-      // Toggle active filter button
       filterBtns.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
@@ -82,7 +74,6 @@ function initAcademicFilters() {
   });
 }
 
-// Modal Controller for Facility Image Detail
 function openFacilityModal(title, description, detailList) {
   const modal = document.getElementById("facility-detail-modal");
   const modalTitle = document.getElementById("modal-facility-title");
@@ -106,7 +97,6 @@ function closeFacilityModal() {
   if (modal) modal.close();
 }
 
-// High-Resolution Image Lightbox Gallery Controller
 let lightboxGallery = [];
 let currentLightboxIndex = 0;
 let lastFocusedElement = null;
@@ -115,7 +105,6 @@ function initImageLightbox() {
   const triggers = document.querySelectorAll(".lightbox-trigger");
   if (!triggers.length) return;
 
-  // Build lightbox collection from all trigger elements
   lightboxGallery = Array.from(triggers).map((el, index) => {
     el.setAttribute("data-lightbox-index", index);
     el.setAttribute("tabindex", "0");
@@ -144,7 +133,6 @@ function initImageLightbox() {
 
   triggers.forEach((trigger, idx) => {
     trigger.addEventListener("click", (e) => {
-      // Don't trigger if user clicked an anchor inside the card
       if (e.target.closest("a")) return;
       e.preventDefault();
       openImageLightbox(idx);
@@ -171,7 +159,6 @@ function initImageLightbox() {
   if (prevBtn) prevBtn.addEventListener("click", () => navigateLightbox(-1));
   if (nextBtn) nextBtn.addEventListener("click", () => navigateLightbox(1));
 
-  // Keyboard navigation & accessibility trap
   document.addEventListener("keydown", (e) => {
     if (!modal.classList.contains("active")) return;
 
@@ -251,7 +238,6 @@ function closeImageLightbox() {
   }
 }
 
-// Campus Facilities & Landmarks Category Filter Handler
 function initCampusSpaceFilters() {
   const filterBtns = document.querySelectorAll(".space-filter-btn");
   const spaceCards = document.querySelectorAll(".campus-space-card");
@@ -286,7 +272,6 @@ function initCampusSpaceFilters() {
   applySpaceFilter("heritage");
 }
 
-// Hero Section Campus Life Video Player Controller
 function initHeroVideoPlayer() {
   const video = document.getElementById("hero-campus-video");
   const playBtn = document.getElementById("hero-video-play-btn");
@@ -357,7 +342,6 @@ function initHeroVideoPlayer() {
   });
 }
 
-// Global initialization
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
   initScrollspy();

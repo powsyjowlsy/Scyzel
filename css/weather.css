@@ -1,9 +1,5 @@
-/*
-  St. Catherine's College - Official Weather Monitoring & Disaster Hub Stylesheet
-  Compliant with DOST-PAGASA Guidelines & Central Visayas Meteorological Standards
-*/
 
-/* Weather Section Container */
+
 .weather-section {
   background-color: var(--color-bg-page);
   padding: var(--space-16) 0;
@@ -22,7 +18,6 @@
   }
 }
 
-/* Primary Telemetry Card */
 .weather-telemetry-card {
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border);
@@ -109,7 +104,6 @@
   font-weight: 500;
 }
 
-/* Metric Sub-Grid */
 .telemetry-metrics-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -147,7 +141,6 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* PAGASA Heat Classification Alert Boxes */
 .pagasa-alert-banner {
   padding: var(--space-4);
   border-radius: var(--radius-sm);
@@ -203,7 +196,6 @@
   line-height: 1.5;
 }
 
-/* Interactive Heat Index Safety Tool */
 .heat-calculator-card {
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border);
@@ -247,7 +239,6 @@
   accent-color: var(--color-primary);
 }
 
-/* Heat Index Output Dedicated Container */
 .calc-hi-output-container {
   padding: var(--space-5);
   border-radius: var(--radius-md);
@@ -257,7 +248,6 @@
   transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
-/* Heat Index 3-Part Visual Hierarchy */
 .hi-metric-row {
   display: flex;
   align-items: center;
@@ -296,7 +286,6 @@
   border: 1px solid transparent;
 }
 
-/* 5-Stage Segmented Meter */
 .hi-meter-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -332,7 +321,6 @@
 .hi-meter-bar.bar-danger.active { background-color: #DC2626; color: #FFFFFF; }
 .hi-meter-bar.bar-ext-danger.active { background-color: #7E22CE; color: #FFFFFF; }
 
-/* Modular Guidance Cards */
 .hi-guidance-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -371,7 +359,6 @@
   font-family: var(--font-sans);
 }
 
-/* Asymmetric Radar Command Console & Emergency Advisory Gateway */
 .radar-console-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -492,7 +479,6 @@
   border: 0;
 }
 
-/* dBZ Precipitation Reflectivity Scale Strip */
 .radar-legend-strip {
   display: flex;
   align-items: center;
@@ -543,7 +529,6 @@
   gap: var(--space-3);
 }
 
-/* Vertical Emergency Advisory Feed */
 .radar-sidebar-wing {
   display: flex;
   flex-direction: column;

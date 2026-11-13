@@ -6,7 +6,8 @@
 Thumbs.db
 Desktop.ini
 
-# Logs & Temporary Files
+# Logs, Temporary & Submission Archives
 *.log
 commit_msg.txt
 scratch/
+*.zip

@@ -5,19 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Saint Catherine's College Promotional Portal & Official Weather Monitoring Center. Providing values-centered Catholic education from K-12 to College in Carcar City, Cebu.">
   <title>Saint Catherine's College • Carcar City, Cebu | Official Portal & Weather Center</title>
-  
-  <!-- Preconnect & Typography Pairing (Plus Jakarta Sans + JetBrains Mono) -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Core Stylesheets -->
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/weather.css">
 </head>
 <body>
 
-  <!-- Sticky Institutional Navigation Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="#home" class="brand-wrapper" aria-label="Saint Catherine's College Home">
@@ -28,7 +25,6 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation Menu -->
       <nav class="nav-menu" aria-label="Main navigation">
         <a href="#home" class="nav-link active">Home</a>
         <a href="#about" class="nav-link">About & Philosophy</a>
@@ -43,13 +39,11 @@
         </a>
       </nav>
 
-      <!-- Mobile Hamburger Button -->
       <button class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
     </div>
 
-    <!-- Mobile Drawer Container -->
     <div class="mobile-drawer" id="mobile-nav-drawer">
       <div class="mobile-drawer-links">
         <a href="#home" class="mobile-drawer-link">Home</a>
@@ -63,7 +57,6 @@
     </div>
   </header>
 
-  <!-- Printable Header Voucher (Visible only during window.print()) -->
   <div class="print-header container">
     <h2>Saint Catherine's College of Carcar City, Cebu</h2>
     <p>Official Admissions Prospectus & Emergency Preparedness Reference</p>
@@ -72,12 +65,11 @@
 
   <main>
 
-    <!-- SECTION 1: HERO & INSTITUTIONAL PROFILE -->
     <section id="home" class="hero-section">
       <div class="container">
         <div class="hero-inner">
           <div class="hero-split-grid">
-            <!-- Left Column: Institutional Narrative & Actions -->
+            
             <div class="hero-content">
               <div class="hero-pill-badge">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -105,7 +97,6 @@
                 </button>
               </div>
 
-              <!-- Hero Metrics Grid -->
               <div class="hero-stats-grid">
                 <div class="stat-item">
                   <div class="stat-number">103</div>
@@ -126,7 +117,6 @@
               </div>
             </div>
 
-            <!-- Right Column: Official Campus Life Video Reel Player (Modern Minimal Editorial) -->
             <div>
               <div class="hero-reel-card">
                 <div class="hero-reel-viewport">
@@ -193,7 +183,6 @@
       </div>
     </section>
 
-    <!-- SECTION 2: INSTITUTIONAL VISION, MISSION & CORE VALUES -->
     <section id="about" class="section-wrapper">
       <div class="container">
         <div class="section-header">
@@ -205,7 +194,7 @@
         </div>
 
         <div class="vm-grid">
-          <!-- Vision Card -->
+          
           <div class="card vm-card">
             <span class="section-eyebrow" style="margin-bottom: 8px;">Institutional Vision</span>
             <h3 style="margin-bottom: 12px; font-size: 1.25rem;">Our Guiding Vision</h3>
@@ -214,7 +203,6 @@
             </p>
           </div>
 
-          <!-- Mission Card -->
           <div class="card vm-card">
             <span class="section-eyebrow" style="margin-bottom: 8px;">Institutional Mission</span>
             <h3 style="margin-bottom: 12px; font-size: 1.25rem;">Our Mission Commitment</h3>
@@ -224,7 +212,6 @@
           </div>
         </div>
 
-        <!-- Five Core Values of St. Catherine's College -->
         <div style="margin-top: var(--space-10);">
           <div style="text-align: center; margin-bottom: var(--space-6);">
             <span class="section-eyebrow">Catherinean Formation</span>
@@ -280,7 +267,6 @@
       </div>
     </section>
 
-    <!-- SECTION 3: K-12 STRANDS & COLLEGE DEGREE PROGRAMS -->
     <section id="academics" class="section-wrapper-alt">
       <div class="container">
         <div class="section-header">
@@ -291,7 +277,6 @@
           </p>
         </div>
 
-        <!-- Academic Department Filter Bar -->
         <div class="academic-filter-bar" role="tablist" aria-label="Academic Level Filter">
           <button class="filter-btn active" data-filter="all">All Programs</button>
           <button class="filter-btn" data-filter="basic">Basic Education (K-10)</button>
@@ -299,10 +284,8 @@
           <button class="filter-btn" data-filter="college">College Degrees (Higher Ed)</button>
         </div>
 
-        <!-- Programs Grid -->
         <div class="grid-12" id="academic-cards-container">
 
-          <!-- 1. Senior High School: ABM Strand -->
           <article class="card academic-card" data-category="shs" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
             <div class="card-header-badge">
               <span class="badge badge-gold">SHS Academic Track</span>
@@ -326,7 +309,6 @@
             </div>
           </article>
 
-          <!-- 2. Senior High School: HUMSS Strand -->
           <article class="card academic-card" data-category="shs" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
             <div class="card-header-badge">
               <span class="badge badge-gold">SHS Academic Track</span>
@@ -350,7 +332,6 @@
             </div>
           </article>
 
-          <!-- 3. Senior High School: STEM & TVL -->
           <article class="card academic-card" data-category="shs" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
             <div class="card-header-badge">
               <span class="badge badge-primary">SHS Academic & Tech-Voc</span>
@@ -374,7 +355,6 @@
             </div>
           </article>
 
-          <!-- 4. Higher Education: College of Teacher Education -->
           <article class="card academic-card" data-category="college" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
             <div class="card-header-badge">
               <span class="badge badge-navy">College Department</span>
@@ -398,7 +378,6 @@
             </div>
           </article>
 
-          <!-- 5. Higher Education: College of Business Administration -->
           <article class="card academic-card" data-category="college" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
             <div class="card-header-badge">
               <span class="badge badge-navy">College Department</span>
@@ -422,7 +401,6 @@
             </div>
           </article>
 
-          <!-- 6. Basic Education Department (K to 10) -->
           <article class="card academic-card" data-category="basic" style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
             <div class="card-header-badge">
               <span class="badge badge-primary">Basic Education</span>
@@ -448,7 +426,6 @@
 
         </div>
 
-        <!-- Senior High School Career Pathways Showcase -->
         <div style="margin-top: var(--space-8); padding-top: var(--space-8); border-top: 1px solid var(--color-border);">
           <div class="section-header" style="text-align: left; margin-bottom: var(--space-4);">
             <span class="section-eyebrow">Future-Ready Blue Warriors</span>
@@ -457,7 +434,7 @@
           </div>
 
           <div class="shs-showcase-grid">
-            <!-- 2-Track Curricular Breakdown -->
+            
             <div class="shs-pathway-card">
               <span class="section-eyebrow" style="color: var(--color-primary); margin-bottom: var(--space-2);">Track 1: Academic Track (Grades 11 & 12)</span>
               <ul class="pathway-list" style="margin-bottom: var(--space-4);">
@@ -503,7 +480,6 @@
               </ul>
             </div>
 
-            <!-- Authentic Real Student Photography Specimen -->
             <div class="shs-photo-card lightbox-trigger" data-title="P. Del Corro Heritage Building Campus" data-caption="Senior High 'Future-Ready Blue Warriors' in official departmental polo uniforms with institutional lanyards." data-category="Senior High Life">
               <div class="lightbox-img-container">
                 <img src="img/shs-warriors.jpg" alt="Saint Catherine's College Senior High Students in Uniform at P. Del Corro Building" loading="lazy">
@@ -527,7 +503,6 @@
       </div>
     </section>
 
-    <!-- SECTION 4: SCHOOL FACILITIES, SERVICES & ACTIVITIES -->
     <section id="campus" class="section-wrapper">
       <div class="container">
         <div class="section-header">
@@ -539,7 +514,7 @@
         </div>
 
         <div class="facility-grid">
-          <!-- Facility 1: Computer Laboratories -->
+          
           <div class="card">
             <div class="facility-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
@@ -550,7 +525,6 @@
             </p>
           </div>
 
-          <!-- Facility 2: Science Research Labs -->
           <div class="card">
             <div class="facility-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31"></path><path d="M14 9.3V2"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path><path d="M5.52 16h12.96"></path></svg>
@@ -561,7 +535,6 @@
             </p>
           </div>
 
-          <!-- Facility 3: Institutional Chapel -->
           <div class="card">
             <div class="facility-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"></path><path d="M17 7H7"></path></svg>
@@ -572,7 +545,6 @@
             </p>
           </div>
 
-          <!-- Facility 4: Instructional Library -->
           <div class="card">
             <div class="facility-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
@@ -583,7 +555,6 @@
             </p>
           </div>
 
-          <!-- Facility 5: Multi-Purpose Gymnasium -->
           <div class="card">
             <div class="facility-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M4.93 4.93l4.24 4.24"></path><path d="M14.83 9.17l4.24-4.24"></path><path d="M14.83 14.83l4.24 4.24"></path><path d="M9.17 14.83l-4.24 4.24"></path></svg>
@@ -594,7 +565,6 @@
             </p>
           </div>
 
-          <!-- Facility 6: Student Organizations -->
           <div class="card">
             <div class="facility-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
@@ -606,7 +576,6 @@
           </div>
         </div>
 
-        <!-- Filterable Campus Facilities & Landmarks Tour -->
         <div class="campus-spaces-wrapper">
           <div class="campus-spaces-header">
             <div>
@@ -624,7 +593,7 @@
           </div>
 
           <div id="campus-spaces-grid" class="campus-spaces-grid" data-layout="four">
-            <!-- 1. P. Del Corro Building -->
+            
             <div class="gallery-card campus-space-card lightbox-trigger" data-space-category="heritage" data-title="P. Del Corro Heritage Building" data-caption="The iconic 1923 P. Del Corro Building front facade, anchoring Saint Catherine's College heritage campus in Carcar City." data-category="Heritage & Grounds">
               <div class="lightbox-img-container">
                 <img src="img/p-del-corro-building.jpg" alt="P. Del Corro Building front facade at Saint Catherine's College" width="1024" height="768" class="gallery-img" loading="lazy">
@@ -640,7 +609,6 @@
               </div>
             </div>
 
-            <!-- 2. Centennial Building (1998) -->
             <div class="gallery-card campus-space-card lightbox-trigger" data-space-category="heritage" data-title="Centennial Building (1998)" data-caption="Four-story Centennial Building academic wing framing the central campus quadrangle." data-category="Heritage & Grounds">
               <div class="lightbox-img-container">
                 <img src="img/centennial-building-1998.jpg" alt="Centennial Building 1998 four-story academic wing" width="1024" height="768" class="gallery-img" loading="lazy">
@@ -656,7 +624,6 @@
               </div>
             </div>
 
-            <!-- 3. Veritas et Excelsior Heritage Hall -->
             <div class="gallery-card campus-space-card lightbox-trigger" data-space-category="heritage" data-title="Veritas et Excelsior Twin Staircase Hall" data-caption="Carved hardwood filigree arches, patterned heritage tiles, and twin staircases beneath the Dominican motto Veritas et Excelsior." data-category="Heritage & Grounds">
               <div class="lightbox-img-container">
                 <img src="img/heritage-twin-staircase.jpg" alt="Veritas et Excelsior main hall and twin wooden staircase" width="1024" height="768" class="gallery-img" loading="lazy">
@@ -672,7 +639,6 @@
               </div>
             </div>
 
-            <!-- 4. SCC Big Quad -->
             <div class="gallery-card campus-space-card lightbox-trigger" data-space-category="heritage" data-title="SCC Big Quad Athletics Complex" data-caption="Open-air championship blue basketball and volleyball courts hosting intramurals, varsity tryouts, and campus assemblies." data-category="Heritage & Grounds">
               <div class="lightbox-img-container">
                 <img src="img/scc-big-quad.jpg" alt="SCC Big Quad blue outdoor basketball courts and surrounding wings" width="1024" height="768" class="gallery-img" loading="lazy">
@@ -688,7 +654,6 @@
               </div>
             </div>
 
-            <!-- 5. CB 106 Computer Laboratory 3 -->
             <div class="gallery-card campus-space-card lightbox-trigger" data-space-category="labs" style="display: none;" data-title="CB 106: Computer Laboratory 3" data-caption="Dedicated IT instruction and computerized admission examination room (CB 106) for Senior High ICT and collegiate courses." data-category="Academic & Tech Labs">
               <div class="lightbox-img-container">
                 <img src="img/computer-lab-cb106.jpg" alt="CB 106 Computer Laboratory 3 entrance" width="768" height="1024" class="gallery-img" style="object-position: center 28%;" loading="lazy">
@@ -704,7 +669,6 @@
               </div>
             </div>
 
-            <!-- 6. Instructional Library -->
             <div class="gallery-card campus-space-card lightbox-trigger" data-space-category="labs" style="display: none;" data-title="Instructional Library & Reading Hub" data-caption="Circulation counter, quiet study tables, reference stacks, and early-grade reading corner inside the SCC Library." data-category="Academic & Tech Labs">
               <div class="lightbox-img-container">
                 <img src="img/instructional-library.jpg" alt="SCC Instructional Library circulation counter and study tables" width="1024" height="768" class="gallery-img" loading="lazy">
@@ -720,7 +684,6 @@
               </div>
             </div>
 
-            <!-- 7. Technology Center & Fleet -->
             <div class="gallery-card campus-space-card lightbox-trigger" data-space-category="labs" style="display: none;" data-title="Technology Center & School Fleet" data-caption="Two-story Technology Center building housing technical workshops above the official SCC student shuttle fleet." data-category="Academic & Tech Labs">
               <div class="lightbox-img-container">
                 <img src="img/technology-center-fleet.jpg" alt="SCC Technology Center and yellow student shuttle fleet" width="1024" height="768" class="gallery-img" loading="lazy">
@@ -736,7 +699,6 @@
               </div>
             </div>
 
-            <!-- 8. CB 110 Wellness Center -->
             <div class="gallery-card campus-space-card lightbox-trigger" data-space-category="services" style="display: none;" data-title="CB 110: Campus Wellness Center" data-caption="School medical clinic (CB 110) featuring first-aid triage, emergency hotline directory, and dedicated isolation room." data-category="Student Services">
               <div class="lightbox-img-container">
                 <img src="img/wellness-center-cb110.jpg" alt="CB 110 Wellness Center school clinic exterior" width="1024" height="768" class="gallery-img" loading="lazy">
@@ -752,7 +714,6 @@
               </div>
             </div>
 
-            <!-- 9. PD 107 Bookstore -->
             <div class="gallery-card campus-space-card lightbox-trigger" data-space-category="services" style="display: none;" data-title="PD 107: Campus Bookstore" data-caption="Official SCC Bookstore (PD 107) supplying approved school uniforms, textbooks, and classroom stationery." data-category="Student Services">
               <div class="lightbox-img-container">
                 <img src="img/bookstore-pd107.jpg" alt="PD 107 Campus Bookstore along the ground corridor" width="1024" height="768" class="gallery-img" loading="lazy">
@@ -768,7 +729,6 @@
               </div>
             </div>
 
-            <!-- 10. CB 206 Faculty Center -->
             <div class="gallery-card campus-space-card lightbox-trigger" data-space-category="services" style="display: none;" data-title="CB 206: Faculty Center" data-caption="Faculty Center (CB 206) supporting academic preparation, student advising, and parent consultations." data-category="Student Services">
               <div class="lightbox-img-container">
                 <img src="img/faculty-center-cb206.jpg" alt="CB 206 Faculty Center double wooden doors and corridor" width="1024" height="768" class="gallery-img" loading="lazy">
@@ -786,7 +746,6 @@
           </div>
         </div>
 
-        <!-- SCC Blue Warriors Athletic Tryout Schedule -->
         <div class="tryouts-wrapper">
           <div class="section-header" style="text-align: left; margin-bottom: var(--space-4);">
             <span class="section-eyebrow">Varsity & Athletic Program</span>
@@ -795,7 +754,7 @@
           </div>
 
           <div class="tryouts-photo-grid">
-            <!-- Tryout Photo 1: Badminton & Basketball -->
+            
             <div class="tryout-photo-card lightbox-trigger" data-title="Badminton & Basketball Official Tryouts" data-caption="Official SCC Blue Warriors tryout announcement for Badminton (Boys & Girls) and Basketball (Boys) at SCC Big Quad (3:40 PM – 5:00 PM)." data-category="Athletics & Varsity">
               <div class="lightbox-img-container">
                 <img src="img/tryout-badminton-basketball.jpg" alt="Official Tryout Announcement for Badminton and Basketball" class="tryout-img" loading="lazy">
@@ -822,7 +781,6 @@
               </div>
             </div>
 
-            <!-- Tryout Photo 2: Volleyball -->
             <div class="tryout-photo-card lightbox-trigger" data-title="Volleyball Official Tryouts" data-caption="Official SCC Blue Warriors tryout announcement for Volleyball (Girls & Boys) at SCC Big Quad (3:40 PM – 5:00 PM)." data-category="Athletics & Varsity">
               <div class="lightbox-img-container">
                 <img src="img/tryout-volleyball.jpg" alt="Official Tryout Announcement for Volleyball" class="tryout-img" loading="lazy">
@@ -849,7 +807,6 @@
               </div>
             </div>
 
-            <!-- Tryout Photo 3: Taekwondo -->
             <div class="tryout-photo-card lightbox-trigger" data-title="Taekwondo Open Tryouts" data-caption="Official SCC Blue Warriors open tryout announcement for Taekwondo on June 29, 2026 at SCC Big Quad (3:40 PM – 5:00 PM)." data-category="Athletics & Varsity">
               <div class="lightbox-img-container">
                 <img src="img/tryout-taekwondo.jpg" alt="Official Tryout Announcement for Taekwondo" class="tryout-img" loading="lazy">
@@ -878,7 +835,6 @@
           </div>
         </div>
 
-        <!-- Campus Life & Institutional Traditions Photo Gallery -->
         <div class="campus-gallery-wrapper">
           <div class="section-header" style="text-align: left; margin-bottom: var(--space-4);">
             <span class="section-eyebrow">Institutional Heritage in Action</span>
@@ -887,7 +843,7 @@
           </div>
 
           <div class="campus-gallery-grid">
-            <!-- SIGLAKAS 2026 -->
+            
             <div class="gallery-card lightbox-trigger" data-title="SIGLAKAS 2026 Grand Opening" data-caption="Annual intramural athletic ceremonies, dance troupe choreography, and stage pyrotechnics." data-category="Intramural Festival">
               <div class="lightbox-img-container">
                 <img src="img/siglakas-opening.jpg" alt="SIGLAKAS 2026 Opening Pyrotechnics and Stage Performance" class="gallery-img" loading="lazy">
@@ -908,7 +864,6 @@
               </div>
             </div>
 
-            <!-- Carcar Church Mass -->
             <div class="gallery-card lightbox-trigger" data-title="Dominican Liturgical Worship" data-caption="Student and faculty congregation gathered inside the historic Archdiocesan Shrine of St. Catherine of Alexandria." data-category="Spiritual Formation">
               <div class="lightbox-img-container">
                 <img src="img/carcar-church-mass.jpg" alt="Dominican Liturgical Mass at Carcar Church" class="gallery-img" loading="lazy">
@@ -929,7 +884,6 @@
               </div>
             </div>
 
-            <!-- United Nations Day -->
             <div class="gallery-card lightbox-trigger" data-title="United Nations Day Celebration" data-caption="Students portraying world cultures in traditional flamenco, mariachi, and European heritage ensembles." data-category="Global Solidarity">
               <div class="lightbox-img-container">
                 <img src="img/united-nations.jpg" alt="United Nations Day Cultural Costumes Celebration" class="gallery-img" loading="lazy">
@@ -950,7 +904,6 @@
               </div>
             </div>
 
-            <!-- Scouting Movement -->
             <div class="gallery-card lightbox-trigger" data-title="GSP & BSP Scouting Investiture" data-caption="Scouting Ceremony: 'Rooted in faith, strong in character, ready to serve.'" data-category="Civic Leadership">
               <div class="lightbox-img-container">
                 <img src="img/scouts-investiture.jpg" alt="Boy Scouts and Girl Scouts Investiture Ceremony" class="gallery-img" loading="lazy">
@@ -975,7 +928,6 @@
       </div>
     </section>
 
-    <!-- SECTION 5: OFFICIAL WEATHER MONITORING & DISASTER PREPAREDNESS HUB -->
     <section id="weather" class="weather-section">
       <div class="container">
         <div class="section-header">
@@ -988,7 +940,6 @@
 
         <div class="weather-grid-layout">
 
-          <!-- 1. Live Meteorological Telemetry Card -->
           <div class="weather-telemetry-card">
             <div>
               <div class="telemetry-card-header">
@@ -1004,7 +955,6 @@
                 </span>
               </div>
 
-              <!-- Main Temperature & Apparent Display -->
               <div class="telemetry-hero-display">
                 <div>
                   <div class="temperature-main" id="live-temp-display">--.-°C</div>
@@ -1016,7 +966,6 @@
                 </div>
               </div>
 
-              <!-- Sensor Metrics Grid -->
               <div class="telemetry-metrics-grid">
                 <div class="metric-cell">
                   <span class="metric-cell-label">Relative Humidity</span>
@@ -1037,7 +986,6 @@
               </div>
             </div>
 
-            <!-- Dynamic DOST-PAGASA Heat Classification Box -->
             <div id="pagasa-alert-container" class="pagasa-alert-banner status-normal">
               <div class="alert-tier-title">
                 <span>DOST-PAGASA Heat Classification: Not Hazardous</span>
@@ -1049,7 +997,6 @@
             </div>
           </div>
 
-          <!-- 2. Interactive Heat Index Safety Tool -->
           <div class="heat-calculator-card">
             <div style="border-bottom: 1px solid var(--color-border); padding-bottom: 12px; margin-bottom: 16px;">
               <span class="section-eyebrow" style="margin-bottom: 2px;">Campus Health & Safety</span>
@@ -1057,7 +1004,6 @@
               <p style="font-size: 0.875rem;">Simulate ambient conditions to evaluate heat exposure risks and view active campus safety protocols based on official DOST-PAGASA warning tiers.</p>
             </div>
 
-            <!-- Temperature Slider -->
             <div class="slider-group">
               <div class="slider-header">
                 <label for="calc-temp-slider" class="slider-label">Ambient Air Temperature (°C)</label>
@@ -1066,7 +1012,6 @@
               <input type="range" id="calc-temp-slider" min="20.0" max="45.0" step="0.5" value="32.0" class="range-slider" aria-label="Ambient Air Temperature in Celsius">
             </div>
 
-            <!-- Humidity Slider -->
             <div class="slider-group">
               <div class="slider-header">
                 <label for="calc-rh-slider" class="slider-label">Relative Atmospheric Humidity (%)</label>
@@ -1075,7 +1020,6 @@
               <input type="range" id="calc-rh-slider" min="20" max="100" step="1" value="70" class="range-slider" aria-label="Relative Humidity in Percentage">
             </div>
 
-            <!-- Calculated Output Box -->
             <div id="calc-hi-output-box" class="calc-hi-output-container transition-all status-caution">
               <div class="flex items-center justify-between">
                 <span class="text-xs font-semibold uppercase">Computed Heat Index:</span>
@@ -1089,7 +1033,6 @@
               </p>
             </div>
 
-            <!-- PAGASA Reference Scale Legend -->
             <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--color-border); font-size: 0.75rem;" class="font-mono-numbers">
               <span style="font-weight: 700; color: var(--color-primary); display: block; margin-bottom: 4px; font-family: var(--font-sans);">Official DOST-PAGASA Heat Scale:</span>
               <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px;">
@@ -1102,10 +1045,8 @@
             </div>
           </div>
 
-          <!-- 3. Asymmetric Radar Command Console & Emergency Advisory Gateway -->
           <div class="radar-console-layout" style="grid-column: 1 / -1;">
-            
-            <!-- Left Wing: Tactical Radar Frame & Telemetry Strip -->
+
             <div class="radar-primary-wing">
               <div class="radar-console-header">
                 <div class="radar-header-info">
@@ -1128,7 +1069,6 @@
                 </div>
               </div>
 
-              <!-- Viewport Frame -->
               <div class="radar-embed-frame">
                 <iframe 
                   id="doppler-radar-iframe"
@@ -1138,7 +1078,6 @@
                 </iframe>
               </div>
 
-              <!-- Radar Calibration & dBZ Reflectivity Strip -->
               <div class="radar-legend-strip font-mono-numbers">
                 <div class="legend-scale-group">
                   <span class="legend-title">Precipitation Reflectivity (dBZ):</span>
@@ -1156,7 +1095,6 @@
               </div>
             </div>
 
-            <!-- Right Wing: Vertical Emergency Warning Gateway Feed -->
             <div class="radar-sidebar-wing">
               <div class="advisory-feed-header">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-blue-600"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
@@ -1167,7 +1105,7 @@
               </div>
 
               <div class="advisory-vertical-feed">
-                <!-- Bulletin 1 -->
+                
                 <a href="https://bagong.pagasa.dost.gov.ph/" target="_blank" rel="noopener" class="advisory-feed-item item-cyclone">
                   <div class="feed-item-top">
                     <span class="feed-category-label">Public Weather</span>
@@ -1178,7 +1116,6 @@
                   <div class="feed-item-src font-mono-numbers">Bagong PAGASA Portal</div>
                 </a>
 
-                <!-- Bulletin 2 -->
                 <a href="https://panahon.gov.ph/" target="_blank" rel="noopener" class="advisory-feed-item item-rainfall">
                   <div class="feed-item-top">
                     <span class="feed-category-label">Hydrometeorology</span>
@@ -1189,7 +1126,6 @@
                   <div class="feed-item-src font-mono-numbers">PANaHON Radar Hub</div>
                 </a>
 
-                <!-- Bulletin 3 -->
                 <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener" class="advisory-feed-item item-flood">
                   <div class="feed-item-top">
                     <span class="feed-category-label">Hydrology Bureau</span>
@@ -1200,7 +1136,6 @@
                   <div class="feed-item-src font-mono-numbers">PAGASA Hydrology</div>
                 </a>
 
-                <!-- Bulletin 4 -->
                 <a href="https://bagong.pagasa.dost.gov.ph/" target="_blank" rel="noopener" class="advisory-feed-item item-heat">
                   <div class="feed-item-top">
                     <span class="feed-category-label">Climatology</span>
@@ -1219,7 +1154,6 @@
       </div>
     </section>
 
-    <!-- SECTION 6: ADMISSIONS & ENROLLMENT (HIGHER EDUCATION & BASIC EDUCATION) -->
     <section id="admissions" class="section-wrapper">
       <div class="container">
         <div class="section-header">
@@ -1230,7 +1164,6 @@
           </p>
         </div>
 
-        <!-- 6-Step Higher Education Admission Journey Rail -->
         <div class="journey-box">
           <div class="journey-intro-split">
             <div>
@@ -1304,7 +1237,6 @@
             </div>
           </div>
 
-          <!-- Expandable 14-Step Detailed College Enrollment Roadmap -->
           <button type="button" class="roadmap-toggle-btn" onclick="toggleEnrollmentRoadmap()">
             <span>View Full 14-Step Formal College Enrollment Roadmap (Portal to Assessment)</span>
             <svg id="roadmap-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.2s;"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -1370,21 +1302,18 @@
           </div>
         </div>
 
-        <!-- Dual Grid: 3-Track Requirements Card + Interactive Admissions Form -->
         <div class="admissions-dual-grid">
-          <!-- Left: Multi-Track Requirements Card -->
+          
           <div class="req-card">
             <span class="section-eyebrow" style="color: var(--color-primary); margin-bottom: 2px;">Documentary Checklist</span>
             <h3 style="font-size: 1.125rem; font-weight: 800; color: var(--color-text-main); margin-bottom: 8px;">Admission Requirements</h3>
 
-            <!-- Accessible 3-Way Segmented Control -->
             <div class="segmented-control" role="tablist" aria-label="Student Department Requirements">
               <button type="button" id="tab-col-new" class="segmented-btn active" role="tab" aria-selected="true" onclick="switchReqTab('col-new')">College (New)</button>
               <button type="button" id="tab-col-trans" class="segmented-btn" role="tab" aria-selected="false" onclick="switchReqTab('col-trans')">College (Transferee)</button>
               <button type="button" id="tab-basic-ed" class="segmented-btn" role="tab" aria-selected="false" onclick="switchReqTab('basic-ed')">Basic Ed & SHS</button>
             </div>
 
-            <!-- Panel 1: College New Student Requirements -->
             <div id="panel-col-new" class="req-tab-panel">
               <ul class="req-list">
                 <li class="req-item">
@@ -1410,7 +1339,6 @@
               </ul>
             </div>
 
-            <!-- Panel 2: College Transferee Requirements -->
             <div id="panel-col-trans" class="req-tab-panel" style="display: none;">
               <ul class="req-list">
                 <li class="req-item">
@@ -1440,7 +1368,6 @@
               </ul>
             </div>
 
-            <!-- Panel 3: Basic Ed & Senior High Requirements -->
             <div id="panel-basic-ed" class="req-tab-panel" style="display: none;">
               <ul class="req-list">
                 <li class="req-item">
@@ -1467,7 +1394,6 @@
               </ul>
             </div>
 
-            <!-- Admissions Hotline Box -->
             <div class="hotline-card">
               <div class="hotline-row font-mono-numbers">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -1483,23 +1409,20 @@
               </div>
             </div>
 
-            <!-- Print Prospectus Button -->
             <button type="button" onclick="triggerPrintProspectus()" class="btn-primary" style="width: 100%; justify-content: center;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
               Print Admissions Prospectus & Checklist
             </button>
           </div>
 
-          <!-- Right: Interactive Ergonomic Admissions Form -->
           <div class="form-container">
               <div style="margin-bottom: 20px; border-bottom: 1px solid var(--color-border); padding-bottom: 12px;">
                 <h3 style="font-size: 1.125rem;">Admissions Inquiry Form</h3>
                 <p style="font-size: 0.875rem;">Academic Year 2026–2027 • Saint Catherine's College</p>
               </div>
 
-              <!-- Interactive Form -->
               <form id="admissions-inquiry-form" novalidate>
-                <!-- Row 1: Student Names -->
+                
                 <div class="form-row">
                   <div class="form-group">
                     <label for="enroll-fname" class="form-label">First Name <span style="color: var(--color-status-danger);">*</span></label>
@@ -1514,7 +1437,6 @@
                   </div>
                 </div>
 
-                <!-- Row 2: Contact Number (Masked) & Email -->
                 <div class="form-row">
                   <div class="form-group">
                     <label for="enroll-mobile" class="form-label">
@@ -1532,7 +1454,6 @@
                   </div>
                 </div>
 
-                <!-- Row 3: LRN & Date of Birth with Auto Age Calculation -->
                 <div class="form-row">
                   <div class="form-group">
                     <label for="enroll-lrn" class="form-label">
@@ -1550,7 +1471,6 @@
                   </div>
                 </div>
 
-                <!-- Auto-Calculated Age Display (Pillar 4) -->
                 <div class="form-group">
                   <label class="form-label">Auto-Calculated Applicant Age & Department Eligibility</label>
                   <div id="enroll-age-display" class="calc-placeholder-pill">
@@ -1559,7 +1479,6 @@
                   </div>
                 </div>
 
-                <!-- Academic Program Selection -->
                 <div class="form-group">
                   <label for="enroll-program" class="form-label">Intended Academic Department / Strand <span style="color: var(--color-status-danger);">*</span></label>
                   <select id="enroll-program" class="form-select" required>
@@ -1588,7 +1507,6 @@
                   <span class="error-message">Please select an intended academic program.</span>
                 </div>
 
-                <!-- Action Bar with Destructive Safeguard (Pillar 1 & 5) -->
                 <div class="form-actions">
                   <button type="button" id="safe-reset-btn" class="btn-reset">
                     Clear Form
@@ -1599,7 +1517,6 @@
                 </div>
               </form>
 
-              <!-- Success Notification Banner -->
               <div id="inquiry-success-banner" style="display: none; margin-top: 16px; padding: 16px; background-color: #ECFDF5; border: 1px solid #A7F3D0; border-radius: var(--radius-sm); color: #065F46;">
                 <h4 style="color: #065F46; font-size: 1rem; margin-bottom: 4px;">Inquiry Successfully Registered</h4>
                 <p style="font-size: 0.875rem; color: #047857;">Your enrollment inquiry has been recorded. Please save or print your preliminary registration voucher below.</p>
@@ -1611,7 +1528,6 @@
       </div>
     </section>
 
-    <!-- SECTION 7: CAMPUS DIRECTORY & CONTACT INFORMATION -->
     <section id="contact" class="section-wrapper-alt">
       <div class="container">
         <div class="section-header">
@@ -1623,7 +1539,7 @@
         </div>
 
         <div class="grid-12">
-          <!-- Contact Details Directory -->
+          
           <div style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
             <div class="card" style="height: 100%;">
               <h3 style="font-size: 1.125rem; margin-bottom: 16px;">Administrative Contact Directory</h3>
@@ -1657,7 +1573,6 @@
             </div>
           </div>
 
-          <!-- Geographical Location & Map Reference -->
           <div style="grid-column: span 12; @media (min-width: 768px) { grid-column: span 6; }">
             <div class="card" style="height: 100%;">
               <h3 style="font-size: 1.125rem; margin-bottom: 12px;">Geographic Coordinates & Weather Station</h3>
@@ -1710,11 +1625,10 @@
 
   </main>
 
-  <!-- INSTITUTIONAL SITE FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Col 1: Institutional Authority -->
+        
         <div class="footer-col">
           <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
             <div class="brand-crest" style="background-color: #0F172A;">SCC</div>
@@ -1728,7 +1642,6 @@
           </div>
         </div>
 
-        <!-- Col 2: Quick Links -->
         <div class="footer-col">
           <h4>Academic Programs</h4>
           <ul class="footer-links">
@@ -1740,7 +1653,6 @@
           </ul>
         </div>
 
-        <!-- Col 3: Student Hub -->
         <div class="footer-col">
           <h4>Campus & Weather</h4>
           <ul class="footer-links">
@@ -1752,7 +1664,6 @@
           </ul>
         </div>
 
-        <!-- Col 4: Project Attribution -->
         <div class="footer-col">
           <h4>Performance Task Notice</h4>
           <p style="font-size: 0.875rem; color: #CBD5E1; margin-bottom: 8px;">
@@ -1764,7 +1675,6 @@
         </div>
       </div>
 
-      <!-- Footer Bottom Bar -->
       <div class="footer-bottom font-mono-numbers">
         <div>
           &copy; 1923–2026 Saint Catherine's College • Carcar City, Cebu, Philippines. All Rights Reserved.
@@ -1776,16 +1686,14 @@
     </div>
   </footer>
 
-  <!-- Core JavaScript Modules -->
   <script src="js/weather.js"></script>
   <script src="js/forms.js"></script>
   <script src="js/app.js"></script>
 
-  <!-- High-Resolution Image Lightbox Modal -->
   <div id="image-lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-title">
     <div class="lightbox-backdrop"></div>
     <div class="lightbox-dialog">
-      <!-- Top Control Bar -->
+      
       <div class="lightbox-top-bar">
         <div class="lightbox-info">
           <span id="lightbox-category" class="section-eyebrow" style="color: #93C5FD; margin-bottom: 0;"></span>
@@ -1802,7 +1710,6 @@
         </div>
       </div>
 
-      <!-- Main Viewport with Interactive Navigation -->
       <div class="lightbox-viewport">
         <button type="button" id="lightbox-prev-btn" class="lightbox-nav-btn prev" aria-label="Previous photograph">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1821,7 +1728,6 @@
         </button>
       </div>
 
-      <!-- Bottom Caption Bar -->
       <div class="lightbox-bottom-bar">
         <p id="lightbox-caption-text" class="lightbox-caption"></p>
       </div>

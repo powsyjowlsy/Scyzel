@@ -1,11 +1,7 @@
-/*
-  St. Catherine's College Promotional & Weather Monitoring Portal
-  Design System: Swiss Modernism 2.0
-  Institutional Palette: Navy, Dominican Gold, Slate, Alabaster
-*/
+
 
 :root {
-  /* Color Tokens - Modern Minimalist Blue Palette */
+  
   --color-primary: #1E40AF;
   --color-primary-hover: #1D4ED8;
   --color-secondary: #2563EB;
@@ -25,18 +21,15 @@
   --color-border: #E2E8F0;
   --color-border-dark: #CBD5E1;
   --color-ring: #2563EB;
-  
-  /* Status Colors */
+
   --color-status-success: #16A34A;
   --color-status-warning: #D97706;
   --color-status-danger: #DC2626;
   --color-status-info: #0284C7;
-  
-  /* Typography Scale */
+
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
-  
-  /* Spacing Grid (8px baseline rhythm) */
+
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -49,13 +42,11 @@
   --space-16: 64px;
   --space-20: 80px;
 
-  /* Elevation Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
-  /* Layout Constraints */
   --max-width: 1280px;
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -63,7 +54,6 @@
   --radius-full: 9999px;
 }
 
-/* Base Reset & Box Sizing */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -85,7 +75,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Tabular Numerals standard for metrics, data, and tables */
 .font-mono-numbers,
 .stat-number,
 .tabular-nums,
@@ -94,7 +83,6 @@ table td {
   font-variant-numeric: tabular-nums;
 }
 
-/* Global Container */
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -111,7 +99,6 @@ table td {
   }
 }
 
-/* Focus Indicator for Accessibility */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -121,7 +108,6 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
-/* Typography Hierarchy */
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-primary);
   font-weight: 700;
@@ -147,7 +133,6 @@ p {
   line-height: 1.65;
 }
 
-/* Navigation & Site Header */
 .site-header {
   background-color: var(--color-bg-surface);
   border-bottom: 1px solid var(--color-border);
@@ -204,7 +189,6 @@ p {
   white-space: nowrap;
 }
 
-/* Nav Menu */
 .nav-menu {
   display: none;
   align-items: center;
@@ -254,7 +238,6 @@ p {
   background-color: var(--color-accent-hover);
 }
 
-/* Mobile Nav Drawer Toggle */
 .mobile-nav-toggle {
   display: flex;
   align-items: center;
@@ -274,7 +257,6 @@ p {
   }
 }
 
-/* Mobile Nav Drawer */
 .mobile-drawer {
   display: none;
   background-color: var(--color-bg-surface);
@@ -306,7 +288,6 @@ p {
   background-color: var(--color-bg-muted);
 }
 
-/* Hero Section */
 .hero-section {
   padding: var(--space-12) 0 var(--space-16);
   background: radial-gradient(circle at 85% 20%, rgba(37, 99, 235, 0.18) 0%, transparent 55%),
@@ -440,7 +421,6 @@ p {
   margin-top: var(--space-1);
 }
 
-/* Hero Split Grid & Campus Video Player Card */
 .hero-split-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -455,7 +435,6 @@ p {
   }
 }
 
-/* Modern Minimal Editorial Campus Reel Card */
 .hero-reel-card {
   position: relative;
   border-radius: var(--radius-lg);
@@ -484,7 +463,6 @@ p {
   display: block;
 }
 
-/* Subtle Top Editorial Scrim */
 .hero-reel-top-bar {
   position: absolute;
   top: 0;
@@ -525,7 +503,6 @@ p {
   font-variant-numeric: tabular-nums;
 }
 
-/* Bottom Cinematic Scrim & Glass Controls */
 .hero-reel-bottom-scrim {
   position: absolute;
   bottom: 0;
@@ -624,7 +601,6 @@ p {
   color: #FFFFFF;
 }
 
-/* Standard Section Layout */
 .section-wrapper {
   padding: var(--space-16) 0;
 }
@@ -660,14 +636,12 @@ p {
   color: var(--color-text-muted);
 }
 
-/* Swiss 12-Column Grid System */
 .grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--space-6);
 }
 
-/* Standard Content Cards */
 .card {
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border);
@@ -717,7 +691,6 @@ p {
   color: var(--color-secondary);
 }
 
-/* Philosophy, Vision, Mission & Core Values */
 .vm-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -742,7 +715,6 @@ p {
   border-top-color: var(--color-accent);
 }
 
-/* 5 Core Values Grid */
 .values-five-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -812,7 +784,6 @@ p {
   margin-top: auto;
 }
 
-/* Academic Program Grids */
 .academic-filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -840,7 +811,6 @@ p {
   border-color: var(--color-primary);
 }
 
-/* Facilities & Campus Life */
 .facility-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -871,7 +841,6 @@ p {
   margin-bottom: var(--space-4);
 }
 
-/* Modern Minimalist Geographic Specs Grid */
 .geo-specs-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -928,7 +897,6 @@ p {
   margin-top: 2px;
 }
 
-/* Form Ergonomics & Validation Styling */
 .form-container {
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border);
@@ -1001,10 +969,9 @@ p {
   .form-input,
   .form-select,
   .form-textarea {
-    font-size: 1rem; /* Pillar 15 & Dimension 13: iOS Safari 16px zoom-prevention floor */
+    font-size: 1rem; 
   }
 }
-
 
 .form-input:focus,
 .form-select:focus,
@@ -1014,7 +981,6 @@ p {
   box-shadow: 0 0 0 3px rgba(15, 41, 66, 0.1);
 }
 
-/* Auto-calculated Age Container Styling */
 .calc-placeholder-pill {
   min-height: 44px;
   display: flex;
@@ -1052,7 +1018,6 @@ p {
   color: #991B1B;
 }
 
-/* Pillar 3: Visual Error State Highlighting */
 .input-error {
   border-color: var(--color-status-danger) !important;
   background-color: #FEF2F2 !important;
@@ -1075,7 +1040,6 @@ p {
   display: block;
 }
 
-/* Pillar 1: Destructive Action Safeguard (2-step button state) */
 .btn-reset {
   min-height: 44px;
   padding: 0 20px;
@@ -1101,7 +1065,6 @@ p {
   box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2);
 }
 
-/* Form Action Bar Wrapping (Pillar 5) */
 .form-actions {
   display: flex;
   flex-wrap: wrap;
@@ -1112,7 +1075,6 @@ p {
   border-top: 1px solid var(--color-border);
 }
 
-/* Footer Architecture */
 .site-footer {
   background-color: var(--color-primary);
   color: #CBD5E1;
@@ -1178,9 +1140,8 @@ p {
   gap: var(--space-3);
 }
 
-/* Pillar 6: Decoupled Client-Native Print Styles */
 @media print {
-  /* Hide interactive, video, navigation, and background noise */
+  
   .site-header,
   .mobile-drawer,
   .hero-actions,
@@ -1230,7 +1191,6 @@ p {
     page-break-inside: avoid;
   }
 
-  /* Explicit print header for verification */
   .print-header {
     display: block !important;
     margin-bottom: 20px;
@@ -1259,9 +1219,6 @@ p {
   display: none;
 }
 
-/* ==========================================================================
-   Senior High Pathways & Student Uniform Specimen Styling
-   ========================================================================== */
 .shs-showcase-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1365,9 +1322,6 @@ p {
   margin-bottom: 0;
 }
 
-/* ==========================================================================
-   Campus Life Athletics Tryouts & Curated Photo Gallery
-   ========================================================================== */
 .tryouts-wrapper {
   margin-top: var(--space-8);
   padding-top: var(--space-8);
@@ -1532,9 +1486,6 @@ p {
   margin-bottom: 0;
 }
 
-/* ==========================================================================
-   Higher Education Admissions & 14-Step Detailed Roadmap
-   ========================================================================== */
 .journey-box {
   background: var(--color-bg-page);
   border: 1px solid var(--color-border);
@@ -1612,7 +1563,6 @@ p {
   margin-bottom: 0;
 }
 
-/* 14-Step Roadmap Collapsible */
 .roadmap-toggle-btn {
   width: 100%;
   background: var(--color-bg-surface);
@@ -1674,7 +1624,6 @@ p {
   margin-bottom: 0;
 }
 
-/* Admissions Dual Layout & Segmented Control */
 .admissions-dual-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1782,11 +1731,6 @@ p {
   flex-shrink: 0;
 }
 
-/* ==========================================================================
-   Photo-Driven Tryouts & High-Resolution Image Lightbox Modal
-   ========================================================================== */
-
-/* 3-Column Photo Grid for Tryouts */
 .tryouts-photo-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1859,7 +1803,6 @@ p {
   color: var(--color-text-main);
 }
 
-/* Lightbox Trigger & Interactive Zoom Affordance */
 .lightbox-trigger {
   cursor: zoom-in;
   position: relative;
@@ -1911,7 +1854,6 @@ p {
   opacity: 1;
 }
 
-/* Lightbox Modal Overlay Architecture */
 .lightbox-modal {
   position: fixed;
   inset: 0;
@@ -2104,7 +2046,6 @@ p {
   margin-bottom: 0;
 }
 
-/* Filterable Campus Spaces & Landmarks Gallery */
 .campus-spaces-wrapper {
   margin-top: var(--space-8);
   padding-top: var(--space-8);
@@ -2179,7 +2120,6 @@ p {
   }
 }
 
-/* Admissions Office Window Preview */
 .journey-intro-split {
   display: grid;
   grid-template-columns: 1fr;

@@ -1,8 +1,4 @@
-/**
- * St. Catherine's College Weather & Disaster Monitoring Engine
- * Meteorological Station: Carcar City, Cebu (10.1100° N, 123.6400° E)
- * DOST-PAGASA Criteria & Rothfusz Regression Model
- */
+
 
 const CARCAR_STATION = {
   name: "Saint Catherine's College Campus Station",
@@ -12,7 +8,6 @@ const CARCAR_STATION = {
   elevationMeters: 14
 };
 
-// Weather Code Interpretation Table based on WMO standards
 const WMO_WEATHER_CODES = {
   0: "Clear Sky",
   1: "Mainly Clear",
@@ -34,48 +29,31 @@ const WMO_WEATHER_CODES = {
   99: "Thunderstorm with Heavy Hail"
 };
 
-/**
- * Computes Heat Index using the Rothfusz regression equation
- * @param {number} t - Temperature in Celsius
- * @param {number} rh - Relative Humidity in percent
- * @returns {number} Heat Index in Celsius rounded to 1 decimal place
- */
 function calculateRothfuszHeatIndex(t, rh) {
-  // Convert Celsius to Fahrenheit
   const tf = (t * 9 / 5) + 32;
 
-  // Simple preliminary equation
   let hi = 0.5 * (tf + 61.0 + ((tf - 68.0) * 1.2) + (rh * 0.094));
 
-  // Rothfusz regression if heat index exceeds 80 deg F (26.7 deg C)
   if (hi >= 80) {
     hi = -42.379 + 2.04901523 * tf + 10.14333127 * rh
       - 0.22475541 * tf * rh - 0.00683783 * tf * tf
       - 0.05481717 * rh * rh + 0.00122874 * tf * tf * rh
       + 0.00085282 * tf * rh * rh - 0.00000199 * tf * tf * rh * rh;
 
-    // Adjustment for low relative humidity
     if (rh < 13 && tf >= 80 && tf <= 112) {
       const adj1 = ((13 - rh) / 4) * Math.sqrt((17 - Math.abs(tf - 95)) / 17);
       hi -= adj1;
     }
-    // Adjustment for high relative humidity
     else if (rh > 85 && tf >= 80 && tf <= 87) {
       const adj2 = ((rh - 85) / 10) * ((87 - tf) / 5);
       hi += adj2;
     }
   }
 
-  // Convert Fahrenheit result back to Celsius
   const hiCelsius = (hi - 32) * 5 / 9;
   return Math.round(hiCelsius * 10) / 10;
 }
 
-/**
- * Maps Heat Index values to official DOST-PAGASA Alert Levels & Safety Protocols
- * @param {number} heatIndexC - Heat Index in Celsius
- * @returns {{ level: string, cssClass: string, range: string, advice: string, protocol: string }}
- */
 function getPagasaClassification(heatIndexC) {
   if (heatIndexC < 27.0) {
     return {
@@ -120,9 +98,6 @@ function getPagasaClassification(heatIndexC) {
   }
 }
 
-/**
- * Fetches verified live meteorological telemetry from Open-Meteo REST API
- */
 async function fetchLiveWeatherData() {
   const endpoint = `https://api.open-meteo.com/v1/forecast?latitude=${CARCAR_STATION.latitude}&longitude=${CARCAR_STATION.longitude}&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m,surface_pressure&daily=temperature_2m_max,temperature_2m_min,uv_index_max&timezone=Asia%2FManila`;
 
@@ -140,10 +115,6 @@ async function fetchLiveWeatherData() {
   }
 }
 
-/**
- * Updates DOM components with live verified telemetry
- * @param {object} data - Meteorological API payload
- */
 function updateWeatherUI(data) {
   const current = data.current;
   const temp = current.temperature_2m;
@@ -153,11 +124,9 @@ function updateWeatherUI(data) {
   const wCode = current.weather_code;
   const conditionText = WMO_WEATHER_CODES[wCode] || "Partly Cloudy";
 
-  // Calculate Rothfusz Heat Index
   const heatIndex = calculateRothfuszHeatIndex(temp, rh);
   const pagasaTier = getPagasaClassification(heatIndex);
 
-  // Update Main Temperature Display
   const tempEl = document.getElementById("live-temp-display");
   if (tempEl) tempEl.textContent = `${temp.toFixed(1)}°C`;
 
@@ -167,7 +136,6 @@ function updateWeatherUI(data) {
   const hiEl = document.getElementById("live-heat-index-display");
   if (hiEl) hiEl.textContent = `${heatIndex.toFixed(1)}°C`;
 
-  // Update Detail Metrics
   const rhEl = document.getElementById("metric-rh");
   if (rhEl) rhEl.textContent = `${rh}%`;
 
@@ -182,7 +150,6 @@ function updateWeatherUI(data) {
     if (uvEl) uvEl.textContent = `${data.daily.uv_index_max[0].toFixed(1)}`;
   }
 
-  // Update PAGASA Classification Banner
   const alertContainer = document.getElementById("pagasa-alert-container");
   if (alertContainer) {
     alertContainer.className = `pagasa-alert-banner ${pagasaTier.cssClass}`;
@@ -196,9 +163,6 @@ function updateWeatherUI(data) {
   }
 }
 
-/**
- * Activates verified baseline data if remote connection is interrupted
- */
 function activateTelemetryFallback() {
   const fallbackPayload = {
     current: {
@@ -224,9 +188,6 @@ function activateTelemetryFallback() {
   }
 }
 
-/**
- * Initializes the Interactive Heat Index Safety Tool
- */
 function initHeatIndexCalculator() {
   const tempSlider = document.getElementById("calc-temp-slider");
   const rhSlider = document.getElementById("calc-rh-slider");
@@ -287,14 +248,9 @@ function initHeatIndexCalculator() {
   tempSlider.addEventListener("input", runCalculation);
   rhSlider.addEventListener("input", runCalculation);
 
-  // Run initial state
   runCalculation();
 }
 
-/**
- * Switches the Doppler Radar embed between Radar and Satellite layers
- * @param {'radar' | 'satellite'} layerType 
- */
 function switchRadarLayer(layerType) {
   const frame = document.getElementById("doppler-radar-iframe");
   const btnRadar = document.getElementById("tab-radar-btn");
@@ -313,11 +269,9 @@ function switchRadarLayer(layerType) {
   }
 }
 
-// Global execution upon DOM readiness
 document.addEventListener("DOMContentLoaded", () => {
   fetchLiveWeatherData();
   initHeatIndexCalculator();
 
-  // Periodically refresh meteorological telemetry every 5 minutes
   setInterval(fetchLiveWeatherData, 300000);
 });
