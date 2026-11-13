@@ -1,0 +1,9 @@
+.git
+.codegraph
+.gemini
+scratch
+docs
+*.zip
+*.log
+commit_msg.txt
+README.md

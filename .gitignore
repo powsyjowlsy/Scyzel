@@ -11,3 +11,9 @@ Desktop.ini
 commit_msg.txt
 scratch/
 *.zip
+
+# Vercel Deployment Metadata
+.vercel/
+
+.vercel
+.env*
