@@ -104,7 +104,7 @@
 }
 
 .heat-index-label {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--color-text-subtle);
   font-weight: 500;
 }
@@ -189,7 +189,7 @@
 }
 
 .alert-tier-title {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -199,7 +199,7 @@
 }
 
 .alert-tier-body {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -224,13 +224,13 @@
 }
 
 .slider-label {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 600;
   color: var(--color-text-main);
 }
 
 .slider-value-display {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   color: var(--color-primary);
   font-family: var(--font-mono);
@@ -268,7 +268,7 @@
 }
 
 .hi-small-label {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--color-text-subtle);
@@ -289,7 +289,7 @@
 .hi-tier-badge {
   padding: 8px 16px;
   border-radius: var(--radius-sm);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -355,7 +355,7 @@
 }
 
 .guidance-label {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
   color: var(--color-primary);
   text-transform: uppercase;
@@ -365,7 +365,7 @@
 }
 
 .guidance-text {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--color-text-muted);
   line-height: 1.6;
   font-family: var(--font-sans);
@@ -618,7 +618,7 @@
 
 .feed-link-arrow {
   color: var(--color-text-subtle);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   transition: transform 0.2s ease;
 }
 
@@ -628,14 +628,14 @@
 }
 
 .feed-item-title {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   color: var(--color-text-main);
   margin-bottom: 2px;
 }
 
 .feed-item-desc {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--color-text-muted);
   line-height: 1.45;
   margin-bottom: 6px;
